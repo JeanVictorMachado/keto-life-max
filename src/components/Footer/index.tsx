@@ -8,10 +8,10 @@ export const Footer = () => {
     <>
       <div className="footer__container">
         <div className="footer__sites">
-          <Link to="#" className="footer__link">
+          <Link to="/politica-de-privacidade" className="footer__link">
             Política de privacidade
           </Link>
-          <Link to="#" className="footer__link">
+          <Link to="/politica-de-privacidade" className="footer__link">
             Política de cookies
           </Link>
           <Link to="#" className="footer__link">

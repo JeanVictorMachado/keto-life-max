@@ -1,6 +1,5 @@
 .header-container {
   width: 100%;
-  height: 98px;
   background-size: cover;
   filter: brightness(0.3);
 
@@ -11,6 +10,12 @@
   position: absolute;
   top: 18px;
   left: 16px;
+}
+
+.header__icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
 }
 
 .header__animate-bar {

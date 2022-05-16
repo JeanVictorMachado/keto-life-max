@@ -18,7 +18,10 @@ export const ToastCookies = ({ closeToast }: ToastCookiesProps) => {
       </p>
 
       <div className="toast-cookies__container-buttons">
-        <Link className="toast-cookies__privacy-policy" to="#">
+        <Link
+          className="toast-cookies__privacy-policy"
+          to="/politica-de-privacidade"
+        >
           Política de privacidade
         </Link>
 

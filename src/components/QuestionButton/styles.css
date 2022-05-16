@@ -1,0 +1,46 @@
+.question-button__container {
+  height: 70px;
+  max-width: 500px;
+  margin: auto;
+
+  text-decoration: none;
+  color: rgb(206, 206, 206);
+  font-size: 26px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  border-radius: 35px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feminine {
+  transition: all ease 0.3s;
+  border: 2px solid #f53373;
+}
+
+.feminine:hover {
+  transition: all ease 0.3s;
+  color: rgb(34, 34, 34);
+  background: linear-gradient(90deg, #f53373, #bf51e8);
+}
+
+.male {
+  transition: all ease 0.3s;
+  border: 2px solid #5172e8;
+}
+
+.male:hover {
+  transition: all ease 0.3s;
+  color: rgb(34, 34, 34);
+  background-image: linear-gradient(90deg, #33f5e0, #5172e8);
+}
+
+.question-button__text {
+  width: 100%;
+  text-align: center;
+  word-wrap: break-word;
+  line-height: 24px;
+}

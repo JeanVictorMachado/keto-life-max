@@ -3,7 +3,7 @@
   text-decoration: none;
   color: rgb(206, 206, 206);
   border-radius: 25px;
-  border: 2px solid cyan;
+  border: 1px solid cyan;
   font-size: 18px;
 
   padding-left: 24px;
@@ -17,8 +17,6 @@
 }
 
 .return-button__container-icon {
-  margin-right: 8px;
-
   display: flex;
   align-items: center;
 }

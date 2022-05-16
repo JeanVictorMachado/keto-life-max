@@ -1,0 +1,33 @@
+.footer-questions__container {
+  width: 100%;
+  padding: 16px;
+
+  position: fixed;
+  bottom: 0;
+
+  box-shadow: 0 0 8px rgba(131, 131, 131, 0.673);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgb(20, 20, 48);
+}
+
+.footer-questions__porcent {
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-radius: 50%;
+  background-image: linear-gradient(90deg, #ceef31, #91ef31);
+  box-shadow: 0 20px 30px 0 rgb(76 5 45 / 60%);
+  color: rgb(63, 63, 63);
+
+  border: 2px solid #486032;
+  box-shadow: 0 0 5px #ceef31;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

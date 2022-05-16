@@ -14,7 +14,7 @@ export const Footer = () => {
           <Link to="/politica-de-privacidade" className="footer__link">
             Política de cookies
           </Link>
-          <Link to="#" className="footer__link">
+          <Link to="/termos-de-uso" className="footer__link">
             Termos de uso
           </Link>
         </div>

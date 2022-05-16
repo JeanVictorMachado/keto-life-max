@@ -1,0 +1,18 @@
+.terms-of-use__content {
+  padding: 0 16px 16px 16px;
+  color: rgb(206, 206, 206);
+}
+
+.terms-of-use__title {
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.terms-of-use__container-return-button {
+  width: 100%;
+  padding: 16px 16px 32px 16px;
+
+  display: flex;
+  justify-content: center;
+}

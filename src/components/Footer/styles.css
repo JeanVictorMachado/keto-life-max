@@ -1,0 +1,35 @@
+.footer__container {
+  width: 100%;
+  padding: 16px;
+  background: rgb(220, 220, 220);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__sites {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: rgb(68, 73, 108);
+}
+
+.footer__reserved-rights-container {
+  width: 100%;
+  padding: 16px;
+  background: rgb(220, 220, 220);
+  color: rgb(68, 73, 108);
+
+  display: flex;
+  justify-content: center;
+}
+
+.footer__reserved-rights {
+  width: 350px;
+  font-size: 14px;
+  text-align: center;
+}

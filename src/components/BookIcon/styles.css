@@ -1,0 +1,17 @@
+.book-icon__1 {
+  enable-background: new 0 0 200 200;
+}
+
+.book-icon__2 {
+  stop-color: #f53373;
+}
+
+.book-icon__3 {
+  stop-color: #bf51e8;
+}
+
+.book-icon__4 {
+  fill: url(#Read_1_);
+  stroke: url(#Read_2_);
+  stroke-miterlimit: 10;
+}

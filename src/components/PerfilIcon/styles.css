@@ -1,0 +1,25 @@
+.teste1 {
+  enable-background: new 0 0 200 200;
+}
+
+.teste2 {
+  stop-color: #f53373;
+}
+
+.teste3 {
+  stop-color: #bf51e8;
+}
+
+.teste4 {
+  fill: none;
+  stroke: url(#SVGID_4_);
+  stroke-width: 6;
+  stroke-miterlimit: 10;
+}
+
+.teste5 {
+  fill: none;
+  stroke: url(#SVGID_5_);
+  stroke-width: 7;
+  stroke-miterlimit: 10;
+}

@@ -1,0 +1,51 @@
+.toast-cookies__container {
+  width: 100%;
+  background: rgba(19, 19, 19, 0.92);
+  padding: 16px;
+
+  position: fixed;
+  bottom: 0;
+}
+
+.toast-cookies__title {
+  color: rgb(186, 186, 186);
+}
+
+.toast-cookies__text {
+  color: rgb(113, 113, 113);
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.toast-cookies__container-buttons {
+  margin-top: 8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toast-cookies__privacy-policy {
+  color: rgb(61, 122, 187);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.toast-cookies__button-accept {
+  margin-right: 8px;
+  border: none;
+  border-radius: 3px;
+  padding: 3px 5px 3px 5px;
+  color: rgb(186, 186, 186);
+  background: rgb(9, 104, 0);
+  cursor: pointer;
+}
+
+.toast-cookies__button-not-accept {
+  border: none;
+  border-radius: 3px;
+  padding: 3px 5px 3px 5px;
+  color: rgb(186, 186, 186);
+  background: rgb(79, 79, 79);
+  cursor: pointer;
+}

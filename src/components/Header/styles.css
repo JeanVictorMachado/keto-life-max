@@ -1,0 +1,30 @@
+.header-container {
+  width: 100%;
+  height: 98px;
+  background-size: cover;
+  filter: brightness(0.3);
+
+  position: relative;
+}
+
+.header__logo-container {
+  position: absolute;
+  top: 18px;
+  left: 16px;
+}
+
+.header__animate-bar {
+  width: 100%;
+  height: 10px;
+  background-image: linear-gradient(90deg, #f53373, #bf51e8, #33f5e0, #5172e8);
+  animation: degrade-animate 5s infinite alternate;
+}
+
+@keyframes degrade-animate {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position-x: 100%;
+  }
+}

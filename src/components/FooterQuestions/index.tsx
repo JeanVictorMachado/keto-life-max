@@ -14,6 +14,7 @@ export const FooterQuestions = ({ link }: FooterQuestionsProps) => {
       <ReturnButton
         link={link}
         boderColor="rgb(111, 111, 111)"
+        textColor="rgb(111, 111, 111)"
         boxShadowValue="0"
         boxShadowColor=""
       />
@@ -21,8 +22,9 @@ export const FooterQuestions = ({ link }: FooterQuestionsProps) => {
       <div className="footer-questions__porcent">25%</div>
 
       <ReturnButton
-        link="/ajuda"
+        link="#"
         boderColor="rgb(111, 111, 111)"
+        textColor="rgb(111, 111, 111)"
         boxShadowValue="0"
         boxShadowColor=""
         sideIcon="right"

@@ -8,7 +8,7 @@ interface QuestionButtonProps {
 }
 
 export const QuestionButton = ({ link, text }: QuestionButtonProps) => {
-  const gender = "male";
+  const gender = localStorage.getItem("@ketopro__gender:");
 
   return (
     <Link to={link} className={`question-button__container ${gender}`}>

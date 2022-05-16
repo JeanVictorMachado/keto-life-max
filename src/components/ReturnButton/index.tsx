@@ -9,6 +9,7 @@ interface ReturnButtonProps {
   text?: string;
   boderColor?: string;
   icon?: React.ReactNode;
+  textColor?: string;
   boxShadowColor?: string;
   boxShadowValue?: string;
   sideIcon?: "left" | "right";
@@ -19,6 +20,7 @@ export const ReturnButton = ({
   text,
   boderColor,
   icon,
+  textColor,
   boxShadowValue,
   boxShadowColor,
   sideIcon = "left",
@@ -30,6 +32,7 @@ export const ReturnButton = ({
       style={{
         border: `1px solid ${boderColor}`,
         boxShadow: `0 0 ${boxShadowValue} ${boxShadowColor}`,
+        color: textColor,
       }}
     >
       {sideIcon === "left" && (

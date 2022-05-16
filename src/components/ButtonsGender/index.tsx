@@ -6,10 +6,14 @@ interface ButtonsGenderProps {
 }
 
 export const ButtonsGender = ({ id }: ButtonsGenderProps) => {
+  const handleSaveGender = (gender: string) => {
+    localStorage.setItem("@ketopro__gender:", gender);
+  };
+
   return (
     <div id={id} className="home-content__container-gender">
       <div className="home-content__container-feminine-gender">
-        <Link to="/1-3">
+        <Link to="/1-3" onClick={() => handleSaveGender("feminine")}>
           <div className="home-content__feminine-gender-3" />
           <div className="home-content__feminine-gender-2" />
           <div className="home-content__feminine-gender-1">
@@ -40,7 +44,7 @@ export const ButtonsGender = ({ id }: ButtonsGenderProps) => {
       </div>
 
       <div className="home-content__container-male-gender">
-        <Link to="/1-3">
+        <Link to="/1-3" onClick={() => handleSaveGender("male")}>
           <div className="home-content__male-gender-3" />
           <div className="home-content__male-gender-2" />
           <div className="home-content__male-gender-1">

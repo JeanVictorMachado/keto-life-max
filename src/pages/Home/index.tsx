@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { BookIcon } from "../../components/BookIcon";
 import { ButtonsGender } from "../../components/ButtonsGender";
 import { Footer } from "../../components/Footer";
@@ -6,29 +6,38 @@ import { Header } from "../../components/Header";
 import { Loading } from "../../components/Loading";
 import { PerfilIcon } from "../../components/PerfilIcon";
 import { ToastCookies } from "../../components/ToastCookies";
+import ContextAPI from "../../context/ContextApi";
 
 import "./styles.css";
 
 export const Home = () => {
   const [toastCookies, setToastCookies] = useState(false);
-  const [loading, setLoading] = useState(true);
+
+  const { showLoading, showToastCookies, setShowLoading, setShowToastCookies } =
+    useContext(ContextAPI);
+
+  const handleToastCookies = (isToast: boolean) => {
+    setToastCookies(isToast);
+    setShowToastCookies(false);
+  };
 
   useEffect(() => {
-    const timerCookies = 4500;
+    const timerCookies = 3500;
     const timerLoading = 1500;
 
     setTimeout(() => {
-      setLoading(false);
+      setShowLoading(false);
     }, timerLoading);
 
     setTimeout(() => {
       setToastCookies(true);
     }, timerCookies);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
     <>
-      {loading ? (
+      {showLoading ? (
         <Loading />
       ) : (
         <div className="home-comtainer">
@@ -106,7 +115,9 @@ export const Home = () => {
 
           <Footer />
 
-          {toastCookies && <ToastCookies closeToast={setToastCookies} />}
+          {toastCookies && showToastCookies && (
+            <ToastCookies closeToast={handleToastCookies} />
+          )}
         </div>
       )}
     </>

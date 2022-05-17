@@ -2,7 +2,8 @@ import { FaCalculator } from "react-icons/fa";
 import { FooterQuestions } from "../../components/FooterQuestions";
 import { GreenCircle } from "../../components/GreenCircle";
 import { Header } from "../../components/Header";
-import { QuestionButton } from "../../components/QuestionButton";
+import { InputCalculation } from "../../components/InputCalculation";
+import { SubmitButton } from "../../components/SubmitButton";
 
 import "./styles.css";
 
@@ -10,7 +11,7 @@ export const QuestionsThree = () => {
   return (
     <div
       style={{
-        height: "100vh",
+        height: "100%",
       }}
     >
       <Header
@@ -19,27 +20,28 @@ export const QuestionsThree = () => {
       />
 
       <p className="questions-one__title">
-        Insira alguns dados e veja como atingir seus resiltados?
+        Insira alguns dados e veja como atingir seus resultados?
       </p>
 
       <div className="questions-one__buttons-container">
         <div className="questions-one__button">
-          <QuestionButton link="/resultado" text="sds" />
+          <InputCalculation placeholder="Idade:" />
         </div>
 
         <div className="questions-one__button">
-          <QuestionButton
-            link="/resultado"
-            text="cseucbeucbeucbeucsssssssssssss"
-          />
+          <InputCalculation placeholder="Altura:" />
         </div>
 
         <div className="questions-one__button">
-          <QuestionButton link="/resultado" text="sds" />
+          <InputCalculation placeholder="Peso:" />
         </div>
 
         <div className="questions-one__button">
-          <QuestionButton link="/resultado" text="sds" />
+          <InputCalculation placeholder="Peso desejado:" />
+        </div>
+
+        <div className="questions-one__button">
+          <SubmitButton text="Calcular Dados" />
         </div>
       </div>
 

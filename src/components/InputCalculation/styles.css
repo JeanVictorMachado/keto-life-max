@@ -1,0 +1,21 @@
+.input-calculation__container {
+  height: 70px;
+  width: 100%;
+  margin: auto;
+  max-width: 500px;
+  border-radius: 35px;
+  background: transparent;
+  padding-left: 25px;
+  font-size: 24px;
+  color: rgb(206, 206, 206);
+}
+
+.input-calculation__feminine {
+  transition: all ease 0.3s;
+  border: 2px solid #f53373;
+}
+
+.input-calculation__male {
+  transition: all ease 0.3s;
+  border: 2px solid #5172e8;
+}

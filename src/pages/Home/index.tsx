@@ -4,7 +4,6 @@ import { ButtonsGender } from "../../components/ButtonsGender";
 import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
 import { Loading } from "../../components/Loading";
-import { LogoApple } from "../../components/LogoApple";
 import { PerfilIcon } from "../../components/PerfilIcon";
 import { ToastCookies } from "../../components/ToastCookies";
 import ContextAPI from "../../context/ContextApi";

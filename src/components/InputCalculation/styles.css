@@ -1,8 +1,13 @@
 .input-calculation__container {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  position: relative;
+}
+
+.input-calculation__input {
   height: 70px;
   width: 100%;
-  margin: auto;
-  max-width: 500px;
   border-radius: 35px;
   background: transparent;
   padding-left: 25px;
@@ -18,4 +23,21 @@
 .input-calculation__male {
   transition: all ease 0.3s;
   border: 2px solid #5172e8;
+}
+
+.input-calculation__error {
+  padding: 5px 8px;
+  border-radius: 15px;
+  color: rgb(220, 220, 220);
+  background: rgb(228, 0, 0);
+
+  position: absolute;
+  right: 25px;
+  bottom: -13px;
+}
+
+.input-calculation__error-border-color {
+  transition: all ease 0.3s;
+  border: 2px solid rgb(228, 0, 0);
+  background: transparent;
 }

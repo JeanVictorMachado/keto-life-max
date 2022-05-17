@@ -9,22 +9,55 @@ import { SubmitButton } from "../../components/SubmitButton";
 
 import "./styles.css";
 
+interface InputValuesProps {
+  age: string;
+  height: string;
+  weight: string;
+  desiredWeight: string;
+}
+
 export const QuestionsThree = () => {
   const navigate = useNavigate();
 
-  const [inputValues, setInputValues] = useState();
+  const [inputValues, setInputValues] = useState({} as InputValuesProps);
 
-  const handleChange = (event: { target: { name: any; value: any } }) => {
+  const [ageError, setAgeError] = useState("");
+  const [heightError, setHeightError] = useState("");
+  const [weightError, setWeightError] = useState("");
+  const [desiredWeightError, setDesiredWeightError] = useState("");
+
+  const [ageValue, setAgeValue] = useState("");
+  const [heightValue, setHeightValue] = useState("");
+  const [weightValue, setWeightValue] = useState("");
+  const [desiredWeightValue, setDesiredWeightValue] = useState("");
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const name = event.target.name;
     const value = event.target.value;
+
+    name === "age" && setAgeValue(value);
+    name === "age" && setAgeError("");
+
+    name === "height" && setHeightValue(value);
+    name === "height" && setHeightError("");
+
+    name === "weight" && setWeightValue(value);
+    name === "weight" && setWeightError("");
+
+    name === "desiredWeight" && setDesiredWeightValue(value);
+    name === "desiredWeight" && setDesiredWeightError("");
+
     setInputValues((values: any) => ({ ...values, [name]: value }));
   };
 
-  const handleSubmit = (event: any) => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     console.log("values: ", inputValues);
 
-    navigate("/");
+    !inputValues.age && setAgeError("Campo obrigatório!");
+    !inputValues.height && setHeightError("Campo obrigatório!");
+    !inputValues.weight && setWeightError("Campo obrigatório!");
+    !inputValues.desiredWeight && setDesiredWeightError("Campo obrigatório!");
   };
 
   return (
@@ -50,14 +83,18 @@ export const QuestionsThree = () => {
           <InputCalculation
             name="age"
             placeholder="Idade:"
+            value={ageValue}
+            error={ageError}
             onChange={handleChange}
           />
         </div>
 
         <div className="questions-one__button">
           <InputCalculation
-            name="heght"
+            name="height"
             placeholder="Altura:"
+            value={heightValue}
+            error={heightError}
             onChange={handleChange}
           />
         </div>
@@ -66,6 +103,8 @@ export const QuestionsThree = () => {
           <InputCalculation
             name="weight"
             placeholder="Peso:"
+            value={weightValue}
+            error={weightError}
             onChange={handleChange}
           />
         </div>
@@ -74,6 +113,8 @@ export const QuestionsThree = () => {
           <InputCalculation
             name="desiredWeight"
             placeholder="Peso desejado:"
+            value={desiredWeightValue}
+            error={desiredWeightError}
             onChange={handleChange}
           />
         </div>

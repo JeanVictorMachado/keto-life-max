@@ -14,8 +14,8 @@ export const Home = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timerCookies = 6000;
-    const timerLoading = 3000;
+    const timerCookies = 5000;
+    const timerLoading = 2000;
 
     setTimeout(() => {
       setLoading(false);

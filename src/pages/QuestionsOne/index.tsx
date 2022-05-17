@@ -38,7 +38,7 @@ export const QuestionsOne = () => {
         </div>
       </div>
 
-      <FooterQuestions link="/" />
+      <FooterQuestions link="/" porcent="25%" />
     </div>
   );
 };

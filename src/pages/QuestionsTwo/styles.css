@@ -1,0 +1,16 @@
+.questions-one__title {
+  font-size: 32px;
+  text-align: center;
+  margin-top: 32px;
+  color: rgb(206, 206, 206);
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.questions-one__buttons-container {
+  padding: 32px 16px 82px 16px;
+}
+
+.questions-one__button {
+  margin-bottom: 24px;
+}

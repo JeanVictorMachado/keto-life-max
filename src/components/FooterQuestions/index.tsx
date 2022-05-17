@@ -6,9 +6,13 @@ import "./styles.css";
 
 interface FooterQuestionsProps {
   link: string;
+  porcent: string;
 }
 
-export const FooterQuestions = ({ link }: FooterQuestionsProps) => {
+export const FooterQuestions = ({
+  link,
+  porcent = "25%",
+}: FooterQuestionsProps) => {
   return (
     <div className="footer-questions__container">
       <ReturnButton
@@ -19,7 +23,7 @@ export const FooterQuestions = ({ link }: FooterQuestionsProps) => {
         boxShadowColor=""
       />
 
-      <div className="footer-questions__porcent">25%</div>
+      <div className="footer-questions__porcent">{porcent}</div>
 
       <ReturnButton
         link="#"

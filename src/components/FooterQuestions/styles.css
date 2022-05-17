@@ -5,8 +5,6 @@
   position: fixed;
   bottom: 0;
 
-  box-shadow: 0 0 8px rgba(131, 131, 131, 0.673);
-
   display: flex;
   justify-content: space-between;
   align-items: center;

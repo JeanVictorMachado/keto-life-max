@@ -1,5 +1,6 @@
-import { ReturnButton } from "../ReturnButton";
+import { useMemo } from "react";
 
+import { ReturnButton } from "../ReturnButton";
 import { FiHelpCircle } from "react-icons/fi";
 
 import "./styles.css";
@@ -9,8 +10,17 @@ interface FooterQuestionsProps {
 }
 
 export const FooterQuestions = ({ link }: FooterQuestionsProps) => {
+  const gender = useMemo(() => {
+    return localStorage.getItem("@ketopro__gender:");
+  }, []);
+
   return (
-    <div className="footer-questions__container">
+    <div
+      className="footer-questions__container"
+      style={{
+        boxShadow: `0 0 5px ${gender === "male" ? "#5172e8" : "#f53373"}`,
+      }}
+    >
       <ReturnButton
         link={link}
         boderColor="rgb(111, 111, 111)"

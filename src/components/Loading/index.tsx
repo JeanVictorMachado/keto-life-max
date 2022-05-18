@@ -26,11 +26,11 @@ export const Loading = ({ isLogo = true }: LoadingProps) => {
         )}
 
         <div className="circle" />
-        <div className="circle" />
-        <div className="circle" />
+        <div className="circle circle__2" />
+        <div className="circle circle__3" />
         <div className="shadow" />
-        <div className="shadow" />
-        <div className="shadow" />
+        <div className="shadow shadow__2" />
+        <div className="shadow shadow__3" />
         {/* <span>Carregando</span> */}
       </div>
     </div>

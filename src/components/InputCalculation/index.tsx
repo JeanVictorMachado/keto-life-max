@@ -1,4 +1,4 @@
-import { ChangeEventHandler } from "react";
+import { ChangeEventHandler, useMemo, useState } from "react";
 
 import "./styles.css";
 
@@ -21,15 +21,23 @@ export const InputCalculation = ({
   placeholder,
   onChange,
 }: InputCalculationProps) => {
-  const gender = localStorage.getItem("@ketopro__gender:");
+  const gender = useMemo(() => {
+    return localStorage.getItem("@ketopro__gender:");
+  }, []);
 
-  console.log("error: ", error);
+  const isError = useMemo(() => {
+    if (error?.length > 0) {
+      return true;
+    }
+
+    return false;
+  }, [error]);
 
   return (
     <div className="input-calculation__container">
       <input
         className={`input-calculation__input ${
-          error.length > 0 && value.length === 0
+          isError
             ? "input-calculation__error-border-color"
             : gender === "male"
             ? "input-calculation__male"
@@ -42,9 +50,7 @@ export const InputCalculation = ({
         onChange={onChange}
       />
 
-      {error.length > 0 && value.length === 0 && (
-        <span className="input-calculation__error">{error}</span>
-      )}
+      {isError && <span className="input-calculation__error">{error}</span>}
 
       {infoType && (
         <span className="input-calculation__info-type">{infoType}</span>

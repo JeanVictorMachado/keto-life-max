@@ -8,6 +8,7 @@ import { InputCalculation } from "../../components/InputCalculation";
 import { SubmitButton } from "../../components/SubmitButton";
 
 import "./styles.css";
+import { validateInputs } from "../../helpers/validateInputs";
 
 interface InputValuesProps {
   age: string;
@@ -52,17 +53,31 @@ export const QuestionsThree = () => {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    console.log("values: ", inputValues);
 
-    !inputValues.age && setAgeError("Campo obrigatório!");
-    // console.log("age: ", typeof Number(inputValues.age));
-    // inputValues.age &&
-    //   typeof inputValues.age !== "number" &&
-    //   setAgeError("Campo obrigatórioddvdvd!");
-
-    !inputValues.height && setHeightError("Campo obrigatório!");
-    !inputValues.weight && setWeightError("Campo obrigatório!");
-    !inputValues.desiredWeight && setDesiredWeightError("Campo obrigatório!");
+    setAgeError(
+      validateInputs({
+        inputName: "age",
+        value: inputValues.age,
+      })
+    );
+    setHeightError(
+      validateInputs({
+        inputName: "height",
+        value: inputValues.height,
+      })
+    );
+    setWeightError(
+      validateInputs({
+        inputName: "weight",
+        value: inputValues.weight,
+      })
+    );
+    setDesiredWeightError(
+      validateInputs({
+        inputName: "desiredWeight",
+        value: inputValues.desiredWeight,
+      })
+    );
   };
 
   return (

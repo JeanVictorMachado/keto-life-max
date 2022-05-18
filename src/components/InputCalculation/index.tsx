@@ -8,6 +8,7 @@ interface InputCalculationProps {
   value: string;
   placeholder: string;
   error?: string;
+  infoType?: string;
   onChange?: ChangeEventHandler<HTMLInputElement> | undefined;
 }
 
@@ -15,6 +16,7 @@ export const InputCalculation = ({
   name,
   type,
   value,
+  infoType,
   error = "",
   placeholder,
   onChange,
@@ -42,6 +44,10 @@ export const InputCalculation = ({
 
       {error.length > 0 && value.length === 0 && (
         <span className="input-calculation__error">{error}</span>
+      )}
+
+      {infoType && (
+        <span className="input-calculation__info-type">{infoType}</span>
       )}
     </div>
   );

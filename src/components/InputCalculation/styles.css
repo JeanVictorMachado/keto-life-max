@@ -9,7 +9,7 @@
   height: 70px;
   width: 100%;
   border-radius: 35px;
-  background: transparent;
+  background: transparent !important;
   padding-left: 25px;
   font-size: 24px;
   color: rgb(206, 206, 206);
@@ -18,11 +18,13 @@
 .input-calculation__feminine {
   transition: all ease 0.3s;
   border: 2px solid #f53373;
+  background: transparent;
 }
 
 .input-calculation__male {
   transition: all ease 0.3s;
   border: 2px solid #5172e8;
+  background: transparent;
 }
 
 .input-calculation__error {
@@ -39,5 +41,13 @@
 .input-calculation__error-border-color {
   transition: all ease 0.3s;
   border: 2px solid rgb(228, 0, 0);
-  background: transparent;
+  background: transparent !important;
+}
+
+.input-calculation__info-type {
+  position: absolute;
+  top: 22px;
+  right: 25px;
+  color: rgb(110, 110, 110);
+  font-size: 20px;
 }

@@ -55,6 +55,11 @@ export const QuestionsThree = () => {
     console.log("values: ", inputValues);
 
     !inputValues.age && setAgeError("Campo obrigatório!");
+    // console.log("age: ", typeof Number(inputValues.age));
+    // inputValues.age &&
+    //   typeof inputValues.age !== "number" &&
+    //   setAgeError("Campo obrigatórioddvdvd!");
+
     !inputValues.height && setHeightError("Campo obrigatório!");
     !inputValues.weight && setWeightError("Campo obrigatório!");
     !inputValues.desiredWeight && setDesiredWeightError("Campo obrigatório!");
@@ -93,6 +98,7 @@ export const QuestionsThree = () => {
           <InputCalculation
             name="height"
             placeholder="Altura:"
+            infoType="cm"
             value={heightValue}
             error={heightError}
             onChange={handleChange}
@@ -103,6 +109,7 @@ export const QuestionsThree = () => {
           <InputCalculation
             name="weight"
             placeholder="Peso:"
+            infoType="Kg"
             value={weightValue}
             error={weightError}
             onChange={handleChange}
@@ -113,6 +120,7 @@ export const QuestionsThree = () => {
           <InputCalculation
             name="desiredWeight"
             placeholder="Peso desejado:"
+            infoType="Kg"
             value={desiredWeightValue}
             error={desiredWeightError}
             onChange={handleChange}

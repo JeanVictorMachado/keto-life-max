@@ -97,13 +97,10 @@ export const QuestionsThree = () => {
 
     name === "age" && setAgeValue(value);
     name === "age" && setAgeError("");
-
     name === "height" && setHeightValue(value);
     name === "height" && setHeightError("");
-
     name === "weight" && setWeightValue(value);
     name === "weight" && setWeightError("");
-
     name === "desiredWeight" && setDesiredWeightValue(value);
     name === "desiredWeight" && setDesiredWeightError("");
 

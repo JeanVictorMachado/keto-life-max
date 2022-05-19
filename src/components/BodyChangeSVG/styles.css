@@ -1,0 +1,37 @@
+#silhouette-male-1_to {
+  animation: silhouette-male-1_to__to 3000ms linear 1 normal forwards;
+}
+
+@keyframes silhouette-male-1_to__to {
+  0% {
+    transform: translate(50.499935px, 107.500023px);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  16.666667% {
+    transform: translate(85.455432px, 107.500023px);
+  }
+
+  100% {
+    transform: translate(85.455432px, 107.500023px);
+  }
+}
+
+#silhouette-male-1 {
+  animation: silhouette-male-1_c_o 3000ms linear 1 normal forwards;
+}
+
+@keyframes silhouette-male-1_c_o {
+  0% {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  16.666667% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

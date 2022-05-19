@@ -1,6 +1,5 @@
 import { useMemo } from "react";
 import { Footer } from "../../components/Footer";
-import { GreenCircleResult } from "../../components/GreenCircleResult";
 import { Loading } from "../../components/Loading";
 import { LogoKetoPro } from "../../components/LogoKetoPro";
 
@@ -10,7 +9,10 @@ import { BiFace } from "react-icons/bi";
 import "./styles.css";
 import { GreenCircle } from "../../components/GreenCircle";
 import { SubmitButton } from "../../components/SubmitButton";
-import { ChartMyWeight } from "../../components/ChartMyWeight";
+import { ChartMyWeightSVG } from "../../components/ChartMyWeightSVG";
+import { BodyChangeSVG } from "../../components/BodyChangeSVG";
+import { CardChartMyWeight } from "../../components/CardChartMyWeight";
+import { CardBodyChange } from "../../components/CardBodyChange";
 
 export const Results = () => {
   const gender = useMemo(() => {
@@ -75,14 +77,26 @@ export const Results = () => {
           </div>
 
           <div className="results__metrics-container">
-            <div className="results__metrics-my-weight">
+            <div className="results__metrics-card-container">
+              <CardChartMyWeight
+                bodyWeight="74Kg"
+                currentWeight="82Kg"
+                desiredWeigh="74Kg"
+              />
+            </div>
+
+            <div className="results__metrics-card-container">
+              <CardBodyChange />
+            </div>
+
+            <div className="results__metrics-card-container">
               <h2>Meu Peso</h2>
               <div className="results__metrics-my-weight-msg">
                 <p>Peso alcançável ao final das primeiras 4 semanas</p>
               </div>
               <span>74,8Kg</span>
               <div>
-                <ChartMyWeight />
+                <ChartMyWeightSVG />
               </div>
             </div>
           </div>

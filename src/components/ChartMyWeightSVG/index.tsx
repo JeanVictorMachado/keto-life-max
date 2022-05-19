@@ -11,7 +11,7 @@ interface ChartMyWeightProps {
   circleChartBorderColor?: string;
 }
 
-export const ChartMyWeight = ({
+export const ChartMyWeightSVG = ({
   currentWeight = "80Kg",
   desiredWeight = "70Kg",
   lineDashedColor = "#fff",

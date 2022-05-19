@@ -1,0 +1,56 @@
+.results__metrics-card-container {
+  width: 100%;
+  max-width: 468px;
+  max-height: 528px;
+  padding: 16px;
+  border-radius: 10px;
+  color: rgb(240, 240, 240);
+  background-color: rgba(16, 16, 31, 0.5);
+  margin-bottom: 16px;
+}
+
+.results__metrics-card-container h2 {
+  font-size: 30px;
+  margin-bottom: 16px;
+}
+
+.results__metrics-my-weight-msg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.results__metrics-card-container p {
+  max-width: 240px;
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 20px;
+  color: rgb(204, 204, 204);
+}
+
+.results__metrics-card-container span {
+  width: 100%;
+  font-size: 30px;
+  margin-bottom: 16px;
+  color: #b0ed97;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 500px) {
+  .results__metrics-card-container {
+    height: 528px;
+  }
+}
+
+@media (min-width: 970px) {
+  .results__metrics-card-container:nth-child(1) {
+    margin-right: 16px;
+  }
+}
+
+@media (min-width: 1450px) {
+  .results__metrics-card-container:nth-child(3) {
+    margin-left: 16px;
+  }
+}

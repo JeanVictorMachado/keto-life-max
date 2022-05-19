@@ -163,7 +163,7 @@
 }
 
 .chart-my-weight__days-month span {
-  height: 8px;
-  font-size: 14px;
-  color: rgb(240, 240, 240);
+  height: 8px !important;
+  font-size: 14px !important;
+  color: rgb(240, 240, 240) !important;
 }

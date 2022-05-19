@@ -226,7 +226,11 @@ export const QuestionsThree = () => {
         </div>
 
         <div className="questions-one__button">
-          <SubmitButton text="Calcular Dados" type="submit" />
+          <SubmitButton
+            text="Calcular Dados"
+            type="submit"
+            marginBottom="16px"
+          />
         </div>
       </form>
 

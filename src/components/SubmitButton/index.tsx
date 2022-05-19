@@ -4,6 +4,7 @@ interface SubmitButtonProps {
   text: string;
   name?: string;
   disabled?: boolean;
+  marginBottom?: string;
   type?: "button" | "submit" | "reset" | undefined;
 }
 
@@ -12,6 +13,7 @@ export const SubmitButton = ({
   name,
   type,
   disabled = false,
+  marginBottom,
 }: SubmitButtonProps) => {
   return (
     <button
@@ -19,6 +21,9 @@ export const SubmitButton = ({
       name={name}
       type={type}
       disabled={disabled}
+      style={{
+        marginBottom,
+      }}
     >
       {text}
     </button>

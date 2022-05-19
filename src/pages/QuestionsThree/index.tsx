@@ -229,7 +229,7 @@ export const QuestionsThree = () => {
           <SubmitButton
             text="Calcular Dados"
             type="submit"
-            marginBottom="16px"
+            marginBottom="24px"
           />
         </div>
       </form>

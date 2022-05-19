@@ -127,14 +127,17 @@
 }
 
 .results__metrics-my-weight p {
+  max-width: 240px;
   margin-bottom: 16px;
   font-size: 20px;
+  color: rgb(204, 204, 204);
 }
 
 .results__metrics-my-weight span {
   width: 100%;
   font-size: 30px;
   margin-bottom: 16px;
+  color: #b0ed97;
   display: flex;
   justify-content: center;
 }

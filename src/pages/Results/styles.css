@@ -126,6 +126,12 @@
   margin-bottom: 16px;
 }
 
+.results__metrics-my-weight-msg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .results__metrics-my-weight p {
   max-width: 240px;
   margin-bottom: 16px;

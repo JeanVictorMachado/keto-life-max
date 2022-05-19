@@ -77,7 +77,9 @@ export const Results = () => {
           <div className="results__metrics-container">
             <div className="results__metrics-my-weight">
               <h2>Meu Peso</h2>
-              <p>Peso alcançável ao final das primeiras 4 semanas</p>
+              <div className="results__metrics-my-weight-msg">
+                <p>Peso alcançável ao final das primeiras 4 semanas</p>
+              </div>
               <span>74,8Kg</span>
               <div>
                 <ChartMyWeight />

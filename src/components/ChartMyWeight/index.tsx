@@ -147,6 +147,17 @@ export const ChartMyWeight = ({
             id="weight-down-pointer_2_ts"
             transform="translate(274,149) scale(0,0)"
           >
+            <text
+              id="circle-down-value-2"
+              dx="-34"
+              dy="-16"
+              font-family='"weight-down:::Roboto"'
+              font-size="16"
+              font-weight="700"
+              fill="#fff"
+            >
+              {desiredWeight}
+            </text>
             <circle
               id="weight-down-pointer_2"
               r="7.5"
@@ -160,6 +171,17 @@ export const ChartMyWeight = ({
             id="weight-down-pointer_1_ts"
             transform="translate(10,14) scale(0,0)"
           >
+            <text
+              id="circle-down-value-1"
+              dx="16"
+              dy="5"
+              font-family='"weight-down:::Roboto"'
+              font-size="16"
+              font-weight="700"
+              fill="#fff"
+            >
+              {currentWeight}
+            </text>
             <circle
               id="weight-down-pointer_1"
               r="8"
@@ -213,9 +235,6 @@ export const ChartMyWeight = ({
           </text>
         </g>
       </svg>
-
-      <p className="chart-my-weight__current-weight">{currentWeight}</p>
-      <p className="chart-my-weight__desired-weight">{desiredWeight}</p>
 
       <div className="chart-my-weight__days-month">
         <span>Dia 1</span>

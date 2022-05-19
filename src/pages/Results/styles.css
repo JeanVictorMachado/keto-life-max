@@ -3,7 +3,7 @@
   background-image: linear-gradient(
       to bottom,
       transparent -35%,
-      #404254 20%,
+      #404254 19%,
       rgb(20, 20, 48)
     ),
     url("../../../public/keto-diet-image-1.jpeg");
@@ -71,19 +71,21 @@
 .results__personal-informations-container {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 32px;
 }
 
 .results__personal-informations {
-  width: 100px;
-  margin-left: 8px;
-  margin-right: 8px;
+  width: 100%;
   color: rgb(240, 240, 240);
   text-align: center;
   background-color: rgba(16, 16, 31, 0.5);
   padding: 16px;
   border-radius: 10px;
+}
+
+.results__personal-informations:nth-child(2) {
+  margin: 0 16px;
 }
 
 .results__personal-informations span {
@@ -111,8 +113,8 @@
 }
 
 .results__metrics-my-weight {
-  max-width: 380px;
-  height: 467px;
+  /* max-width: 380px;
+  height: 467px; */
   padding: 16px;
   border-radius: 10px;
   color: rgb(240, 240, 240);

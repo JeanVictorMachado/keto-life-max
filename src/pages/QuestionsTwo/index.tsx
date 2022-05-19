@@ -1,12 +1,41 @@
+import { useContext } from "react";
 import { FaRunning } from "react-icons/fa";
 import { FooterQuestions } from "../../components/FooterQuestions";
 import { GreenCircle } from "../../components/GreenCircle";
 import { Header } from "../../components/Header";
 import { QuestionButton } from "../../components/QuestionButton";
+import ContextAPI from "../../context/ContextApi";
 
 import "./styles.css";
 
 export const QuestionsTwo = () => {
+  const { setQuestionTwo } = useContext(ContextAPI);
+
+  const handleClick = (value: string) => {
+    const personalInformations = JSON.parse(
+      localStorage.getItem("@ketopro__personalinformations:") as string
+    );
+
+    if (personalInformations) {
+      localStorage.setItem(
+        "@ketopro__personalinformations:",
+        JSON.stringify({
+          ...personalInformations,
+          questionTwo: value,
+        })
+      );
+    } else {
+      localStorage.setItem(
+        "@ketopro__personalinformations:",
+        JSON.stringify({
+          questionTwo: value,
+        })
+      );
+    }
+
+    setQuestionTwo(value);
+  };
+
   return (
     <div
       style={{
@@ -24,19 +53,35 @@ export const QuestionsTwo = () => {
 
       <div className="questions-one__buttons-container">
         <div className="questions-one__button">
-          <QuestionButton link="/3-3" text="sds" />
+          <QuestionButton
+            link="/3-3"
+            text="sds"
+            onClick={() => handleClick("1")}
+          />
         </div>
 
         <div className="questions-one__button">
-          <QuestionButton link="/3-3" text="cseucbeucbeucbeucsssssssssssss" />
+          <QuestionButton
+            link="/3-3"
+            text="cseucbeucbeucbeucsssssssssssss"
+            onClick={() => handleClick("2")}
+          />
         </div>
 
         <div className="questions-one__button">
-          <QuestionButton link="/3-3" text="sds" />
+          <QuestionButton
+            link="/3-3"
+            text="sds"
+            onClick={() => handleClick("3")}
+          />
         </div>
 
         <div className="questions-one__button">
-          <QuestionButton link="/3-3" text="sds" />
+          <QuestionButton
+            link="/3-3"
+            text="sds"
+            onClick={() => handleClick("4")}
+          />
         </div>
       </div>
 

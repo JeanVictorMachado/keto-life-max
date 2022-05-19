@@ -1,4 +1,7 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import ContextAPI from "../../context/ContextApi";
+
 import "./styles.css";
 
 interface ButtonsGenderProps {
@@ -6,8 +9,33 @@ interface ButtonsGenderProps {
 }
 
 export const ButtonsGender = ({ id }: ButtonsGenderProps) => {
+  const { setGender } = useContext(ContextAPI);
+
   const handleSaveGender = (gender: string) => {
     localStorage.setItem("@ketopro__gender:", gender);
+
+    const personalInformations = JSON.parse(
+      localStorage.getItem("@ketopro__personalinformations:") as string
+    );
+
+    if (personalInformations) {
+      localStorage.setItem(
+        "@ketopro__personalinformations:",
+        JSON.stringify({
+          ...personalInformations,
+          gender,
+        })
+      );
+    } else {
+      localStorage.setItem(
+        "@ketopro__personalinformations:",
+        JSON.stringify({
+          gender,
+        })
+      );
+    }
+
+    setGender(gender);
   };
 
   return (

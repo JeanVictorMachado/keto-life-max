@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaCalculator } from "react-icons/fa";
 import { FooterQuestions } from "../../components/FooterQuestions";
@@ -9,6 +9,7 @@ import { SubmitButton } from "../../components/SubmitButton";
 import { validateInputs } from "../../helpers/validateInputs";
 
 import "./styles.css";
+import ContextAPI from "../../context/ContextApi";
 
 interface ValidateErrorsProps {
   isAgeError: string;
@@ -27,6 +28,9 @@ interface InputValuesProps {
 export const QuestionsThree = () => {
   const navigate = useNavigate();
 
+  const { setAge, setHeight, setWeight, setDesiredWeight } =
+    useContext(ContextAPI);
+
   const [inputValues, setInputValues] = useState({} as InputValuesProps);
 
   const [ageError, setAgeError] = useState("");
@@ -38,6 +42,45 @@ export const QuestionsThree = () => {
   const [heightValue, setHeightValue] = useState("");
   const [weightValue, setWeightValue] = useState("");
   const [desiredWeightValue, setDesiredWeightValue] = useState("");
+
+  const saveInState = ({
+    age,
+    height,
+    weight,
+    desiredWeight,
+  }: InputValuesProps) => {
+    const personalInformations = JSON.parse(
+      localStorage.getItem("@ketopro__personalinformations:") as string
+    );
+
+    if (personalInformations) {
+      localStorage.setItem(
+        "@ketopro__personalinformations:",
+        JSON.stringify({
+          ...personalInformations,
+          age,
+          height,
+          weight,
+          desiredWeight,
+        })
+      );
+    } else {
+      localStorage.setItem(
+        "@ketopro__personalinformations:",
+        JSON.stringify({
+          age,
+          height,
+          weight,
+          desiredWeight,
+        })
+      );
+    }
+
+    setAge(age);
+    setHeight(height);
+    setWeight(weight);
+    setDesiredWeight(desiredWeight);
+  };
 
   const validateErrors = ({
     isAgeError,
@@ -56,6 +99,13 @@ export const QuestionsThree = () => {
       isWeightError.length === 0 &&
       isDesiredWeightError.length === 0
     ) {
+      saveInState({
+        age: ageValue,
+        height: heightValue,
+        weight: weightValue,
+        desiredWeight: desiredWeightValue,
+      });
+
       navigate("/");
     }
   };

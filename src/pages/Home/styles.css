@@ -81,15 +81,16 @@
 }
 
 .home-content__button-start-now {
-  height: 50px;
+  height: 70px;
   width: 100%;
   max-width: 400px;
   font-size: 24px;
   border: none;
-  border-radius: 25px;
+  border-radius: 35px;
   color: #d2d2d2;
   background-image: linear-gradient(90deg, #f53373, #bf51e8, #5172e8);
   text-decoration: none;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.482);
   cursor: pointer;
 
   display: flex;

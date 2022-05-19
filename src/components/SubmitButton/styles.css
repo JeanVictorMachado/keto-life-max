@@ -17,10 +17,10 @@
 .submit-button__container:hover {
   transition: all 0.3s ease;
   filter: brightness(0.9);
-  animation: stretch 1s ease infinite;
+  animation: animationButonSubmit 1s ease infinite;
 }
 
-@keyframes stretch {
+@keyframes animationButonSubmit {
   0% {
     transform: scale(1);
   }

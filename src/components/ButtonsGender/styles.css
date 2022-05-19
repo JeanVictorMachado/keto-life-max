@@ -4,13 +4,13 @@
   margin-top: 32px;
 }
 
-@keyframes stretch {
+@keyframes animationButtonsGender {
   0% {
     transform: scale(1);
     border-radius: 100%;
   }
   100% {
-    transform: scale(1.2);
+    transform: scale(1.05);
     opacity: 0.3;
   }
 }
@@ -30,7 +30,8 @@
 
   opacity: 0.15;
   border: 1px solid #ef5eb9;
-  animation: stretch 1.5s ease-in-out 0.1s alternate infinite none running;
+  animation: animationButtonsGender 1.5s ease-in-out 0.1s alternate infinite
+    none running;
 
   position: absolute;
   left: -10px;
@@ -45,7 +46,8 @@
 
   opacity: 0.2;
   border: 1px solid #ef5eb9;
-  animation: stretch 1.5s ease-in-out 0.3s alternate infinite none running;
+  animation: animationButtonsGender 2s ease-in-out 0.3s alternate infinite none
+    running;
 
   position: absolute;
   top: 15px;
@@ -82,7 +84,8 @@
 
   opacity: 0.15;
   border: 1px solid #5bd8f0;
-  animation: stretch 1.5s ease-in-out 0.1s alternate infinite none running;
+  animation: animationButtonsGender 1.5s ease-in-out 0.1s alternate infinite
+    none running;
 
   position: absolute;
 }
@@ -96,7 +99,8 @@
 
   opacity: 0.2;
   border: 1px solid #5bd8f0;
-  animation: stretch 1.5s ease-in-out 0.3s alternate infinite none running;
+  animation: animationButtonsGender 2s ease-in-out 0.3s alternate infinite none
+    running;
 
   position: absolute;
   top: 15px;

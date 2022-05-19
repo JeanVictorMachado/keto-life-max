@@ -101,15 +101,15 @@
 .home-content__button-start-now:hover {
   transition: 0.3s;
   filter: brightness(0.9);
-  animation: stretch 1s ease infinite;
+  animation: animationButtonHome 1s ease infinite;
 }
 
-@keyframes stretch {
+@keyframes animationButtonHome {
   0% {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.05);
+    transform: scale(1.02);
   }
   100% {
     transform: scale(1);

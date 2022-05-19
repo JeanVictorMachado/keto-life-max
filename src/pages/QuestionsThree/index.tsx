@@ -106,7 +106,7 @@ export const QuestionsThree = () => {
         desiredWeight: desiredWeightValue,
       });
 
-      navigate("/");
+      navigate("/results");
     }
   };
 

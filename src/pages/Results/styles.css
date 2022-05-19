@@ -1,0 +1,12 @@
+.results__comtainer {
+  height: 100vh;
+  background-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      #404254 25%,
+      rgb(20, 20, 48)
+    ),
+    url("../../../public/keto-diet-image-1.jpeg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}

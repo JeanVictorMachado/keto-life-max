@@ -1,0 +1,168 @@
+#weight-down-chart-solid {
+  animation: weight-down-chart-solid_c_o 3000ms linear 1 normal forwards;
+}
+
+@keyframes weight-down-chart-solid_c_o {
+  0% {
+    opacity: 0;
+  }
+
+  3.333333% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#weight-down-chart-curve {
+  animation: weight-down-chart-curve_s_do 3000ms linear 1 normal forwards;
+}
+
+@keyframes weight-down-chart-curve_s_do {
+  0% {
+    stroke-dashoffset: 311.43;
+  }
+
+  16.666667% {
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+#weight-down-pointer_2_ts {
+  animation: weight-down-pointer_2_ts__ts 3000ms linear 1 normal forwards;
+}
+
+@keyframes weight-down-pointer_2_ts__ts {
+  0% {
+    transform: translate(274px, 149px) scale(0, 0);
+  }
+
+  13.333333% {
+    transform: translate(274px, 149px) scale(0, 0);
+  }
+
+  23.333333% {
+    transform: translate(274px, 149px) scale(1, 1);
+  }
+
+  100% {
+    transform: translate(274px, 149px) scale(1, 1);
+  }
+}
+
+#weight-down-pointer_1_ts {
+  animation: weight-down-pointer_1_ts__ts 3000ms linear 1 normal forwards;
+}
+
+@keyframes weight-down-pointer_1_ts__ts {
+  0% {
+    transform: translate(10px, 14px) scale(0, 0);
+  }
+
+  10% {
+    transform: translate(10px, 14px) scale(1, 1);
+  }
+
+  100% {
+    transform: translate(10px, 14px) scale(1, 1);
+  }
+}
+
+#weight-down-value-1 {
+  animation: weight-down-value-1_c_o 3000ms linear 1 normal forwards;
+}
+
+@keyframes weight-down-value-1_c_o {
+  0% {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#weight-down-value-2 {
+  animation: weight-down-value-2_c_o 3000ms linear 1 normal forwards;
+}
+
+@keyframes weight-down-value-2_c_o {
+  0% {
+    opacity: 0;
+  }
+
+  13.333333% {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  }
+
+  23.333333% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@font-face {
+  font-family: "weight-down:::Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/l/font?kit=KFOmCnqEu92Fr1Me5X5dIwAFa4W038UvGRjRZjJxE0ah&amp;skey=a0a0114a1dcab3ac&amp;v=v29)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "weight-down:::Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/l/font?kit=KFOlCnqEu92Fr1MmWUlvAwUvCvbK1MwIMTbVYzp6BF-2KpR1&amp;skey=c06e7213f788649e&amp;v=v29)
+    format("truetype");
+}
+
+.chart-my-weight__chart-container {
+  position: relative;
+}
+
+.chart-my-weight__current-weight {
+  width: 100%;
+  text-align: left;
+  padding-left: 8px;
+  position: absolute;
+  top: 5px;
+  left: 24px;
+}
+
+.chart-my-weight__desired-weight {
+  width: 100%;
+  text-align: right;
+  padding-right: 8px;
+  position: absolute;
+  bottom: 86px;
+}
+
+.chart-my-weight__days-month {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chart-my-weight__days-month span {
+  height: 8px;
+  font-size: 14px;
+}

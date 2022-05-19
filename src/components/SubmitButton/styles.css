@@ -14,7 +14,7 @@
   cursor: pointer;
 }
 
-.submit-button__container:hover {
+.submit-button__container {
   transition: all 0.3s ease;
   filter: brightness(0.9);
   animation: animationButonSubmit 1s ease infinite;

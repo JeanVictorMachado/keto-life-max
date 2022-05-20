@@ -6,7 +6,7 @@ interface BodyChangeSVGProps {
   shadowManSecond?: string;
 }
 
-export const BodyChangeSVG = ({
+export const BodyMenChangeSVG = ({
   manColor = "#a8e063",
   shadowMan = "rgba(168,224,99,.35)",
   shadowManSecond = "rgba(168,224,99,0)",

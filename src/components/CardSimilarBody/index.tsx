@@ -1,8 +1,14 @@
-import { SimilarBodySVG } from "../SimilarBodySVG";
+import { useMemo } from "react";
+import { SimilarBodyMenSVG } from "../SimilarBodyMenSVG";
+import { SimilarBodyWomenSVG } from "../SimilarBodyWomenSVG";
 
 import "./styles.css";
 
 export const CardSimilarBody = () => {
+  const gender = useMemo(() => {
+    return localStorage.getItem("@ketopro__gender:");
+  }, []);
+
   return (
     <div className="card-similar-body__container">
       <div className="card-similar-body__porcent-infos">
@@ -15,7 +21,7 @@ export const CardSimilarBody = () => {
       </div>
 
       <div className="card-similar-body__body">
-        <SimilarBodySVG />
+        {gender === "male" ? <SimilarBodyMenSVG /> : <SimilarBodyWomenSVG />}
       </div>
     </div>
   );

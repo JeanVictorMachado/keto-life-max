@@ -1,0 +1,41 @@
+#silhouette-female-purple-female-2 {
+  animation: silhouette-female-purple-female-2_c_o 3000ms linear 1 normal
+    forwards;
+}
+
+@keyframes silhouette-female-purple-female-2_c_o {
+  0% {
+    opacity: 1;
+  }
+
+  26.666667% {
+    opacity: 0.18;
+  }
+
+  100% {
+    opacity: 0.18;
+  }
+}
+
+#silhouette-female-purple-female-1 {
+  animation: silhouette-female-purple-female-1_c_o 3000ms linear 1 normal
+    forwards;
+}
+
+@keyframes silhouette-female-purple-female-1_c_o {
+  0% {
+    opacity: 0;
+  }
+
+  6.666667% {
+    opacity: 0;
+  }
+
+  26.666667% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

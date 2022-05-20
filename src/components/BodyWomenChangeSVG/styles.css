@@ -1,0 +1,42 @@
+#silhouette-female-green-female-1_to {
+  animation: silhouette-female-green-female-1_to__to 3000ms linear 1 normal
+    forwards;
+}
+
+@keyframes silhouette-female-green-female-1_to__to {
+  0% {
+    transform: translate(47.500044px, 107.49984px);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  16.666667% {
+    transform: translate(86.016653px, 107.49984px);
+  }
+
+  100% {
+    transform: translate(86.016653px, 107.49984px);
+  }
+}
+
+#silhouette-female-green-female-1 {
+  animation: silhouette-female-green-female-1_c_o 3000ms linear 1 normal
+    forwards;
+}
+
+@keyframes silhouette-female-green-female-1_c_o {
+  0% {
+    opacity: 0;
+  }
+
+  3.333333% {
+    opacity: 0;
+  }
+
+  16.666667% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

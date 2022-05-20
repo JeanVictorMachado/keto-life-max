@@ -1,15 +1,21 @@
-import { BodyChangeSVG } from "../BodyChangeSVG";
+import { useMemo } from "react";
+import { BodyMenChangeSVG } from "../BodyMenChangeSVG";
+import { BodyWomenChangeSVG } from "../BodyWomenChangeSVG";
 
 import "./styles.css";
 
 export const CardBodyChange = () => {
+  const gender = useMemo(() => {
+    return localStorage.getItem("@ketopro__gender:");
+  }, []);
+
   return (
     <div className="results__svg-card-container">
       <h2>Estimativa de mudança corporal</h2>
 
       <div className="results__svg-container">
         <div className="results__svg-personal">
-          <BodyChangeSVG />
+          {gender === "male" ? <BodyMenChangeSVG /> : <BodyWomenChangeSVG />}
         </div>
 
         <div className="results__infos-personal">

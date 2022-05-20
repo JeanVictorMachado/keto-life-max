@@ -5,7 +5,7 @@ interface SimilarBodySVGProps {
   personColor?: string;
 }
 
-export const SimilarBodySVG = ({
+export const SimilarBodyMenSVG = ({
   personColor = "#592b74",
   personShadow = "#592b74",
 }: SimilarBodySVGProps) => {

@@ -57,7 +57,7 @@
 .results__result-resume-container {
   width: 100%;
   max-width: 500px;
-  padding: 32px 16px;
+  padding: 32px 16px 16px 16px;
   margin: auto;
 }
 

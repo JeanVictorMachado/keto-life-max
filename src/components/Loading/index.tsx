@@ -20,7 +20,7 @@ export const Loading = ({ isLogo = true }: LoadingProps) => {
             <LogoApple />
 
             <p className="logo-text">
-              Keto <p className="logo-text-pro">PRO</p>
+              Keto <p className="logo-text-pro">Life</p>
             </p>
           </div>
         )}

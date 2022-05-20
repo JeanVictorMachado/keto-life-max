@@ -6,12 +6,12 @@ export const LogoKetoPro = () => {
       <img
         className="header__logo"
         src="logo-keto-pro.svg"
-        alt="Logotipo keto pro"
+        alt="Logotipo Keto Life"
       />
 
       <div>
         <p className="header-title">
-          Keto <p className="header-title-pro">PRO</p>
+          Keto <p className="header-title-pro">Life</p>
         </p>
 
         <span className="header-logo-sub-title">EMAGREÇA COM SAÚDE</span>

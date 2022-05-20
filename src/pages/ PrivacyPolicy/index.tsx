@@ -20,7 +20,7 @@ export const PrivacyPolicy = () => {
       <div className="privacy-policy-content">
         <h2 className="privacy-policy__title">Política de Privacidade</h2>
         <p>
-          A sua privacidade é importante para nós. É política do Keto PRO
+          A sua privacidade é importante para nós. É política do Keto Life
           respeitar a sua privacidade em relação a qualquer informação sua que
           possamos coletar no site
           <a
@@ -29,7 +29,7 @@ export const PrivacyPolicy = () => {
             }}
             href="www.ketopro.com"
           >
-            Keto PRO
+            Keto Life
           </a>
           , e outros sites que possuímos e operamos.
         </p>
@@ -78,7 +78,7 @@ export const PrivacyPolicy = () => {
           você tiver alguma dúvida sobre como lidamos com dados do usuário e
           informações pessoais, entre em contacto connosco.
         </p>
-        <h2 className="privacy-policy__title">Política de Cookies Keto PRO</h2>
+        <h2 className="privacy-policy__title">Política de Cookies Keto Life</h2>
         <h3>O que são cookies?</h3>
         <p>
           Como é prática comum em quase todos os sites profissionais, este site
@@ -253,7 +253,7 @@ export const PrivacyPolicy = () => {
         <h3>Compromisso do Usuário</h3>{" "}
         <p>
           O usuário se compromete a fazer uso adequado dos conteúdos e da
-          informação que o Keto PRO oferece no site e com caráter enunciativo,
+          informação que o Keto Life oferece no site e com caráter enunciativo,
           mas não limitativo:
         </p>{" "}
         <ul>
@@ -279,7 +279,7 @@ export const PrivacyPolicy = () => {
           </li>{" "}
           <li>
             C) Não causar danos aos sistemas físicos (hardwares) e lógicos
-            (softwares) do Keto PRO, de seus fornecedores ou terceiros, para
+            (softwares) do Keto Life, de seus fornecedores ou terceiros, para
             introduzir ou disseminar vírus informáticos ou quaisquer outros
             sistemas de hardware ou software que sejam capazes de causar danos
             anteriormente mencionados.

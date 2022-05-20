@@ -49,6 +49,12 @@
   }
 }
 
+@media (min-width: 970px) {
+  .results__metrics-card-container:nth-child(4) {
+    margin-left: 16px;
+  }
+}
+
 @media (min-width: 1450px) {
   .results__metrics-card-container:nth-child(3) {
     margin-left: 16px;

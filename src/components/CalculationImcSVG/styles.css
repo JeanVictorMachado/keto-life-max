@@ -1,0 +1,92 @@
+#bmi-phase-3-chart-gradient {
+  animation: bmi-phase-3-chart-gradient_c_o 3000ms linear 1 normal forwards;
+}
+
+@keyframes bmi-phase-3-chart-gradient_c_o {
+  0% {
+    opacity: 0;
+  }
+
+  3.333333% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#bmi-phase-3-chart-curve {
+  animation: bmi-phase-3-chart-curve_s_do 3000ms linear 1 normal forwards;
+}
+
+@keyframes bmi-phase-3-chart-curve_s_do {
+  0% {
+    stroke-dashoffset: 385.9;
+  }
+
+  16.666667% {
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+#bmi-phase-3-pointer-3_ts {
+  animation: bmi-phase-3-pointer-3_ts__ts 3000ms linear 1 normal forwards;
+}
+
+@keyframes bmi-phase-3-pointer-3_ts__ts {
+  0% {
+    transform: translate(192px, 59px) scale(0, 0);
+  }
+
+  3.333333% {
+    transform: translate(192px, 59px) scale(0, 0);
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  }
+
+  20% {
+    transform: translate(192px, 59px) scale(1, 1);
+  }
+
+  100% {
+    transform: translate(192px, 59px) scale(1, 1);
+  }
+}
+
+#bmi-phase-3-value-3 {
+  animation: bmi-phase-3-value-3_c_o 3000ms linear 1 normal forwards;
+}
+
+@keyframes bmi-phase-3-value-3_c_o {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@font-face {
+  font-family: "bmi-phase-3:::Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/l/font?kit=KFOlCnqEu92Fr1MmWUlvAwU5BPPBoA&amp;skey=c06e7213f788649e&amp;v=v29)
+    format("truetype");
+}

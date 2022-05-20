@@ -98,7 +98,7 @@ export const Home = () => {
               <p className="home-content__perfil-text">
                 Veja uma vídeo aula grátis criada por um nutricionista
                 experiente e pós graduado em emagrecimento de forma saudável,
-                entenda tudo como funciona o metodo Keto PRO e o por que ele é
+                entenda tudo como funciona o metodo Keto Life e o por que ele é
                 tudo eficaz na perda de peso.
               </p>
             </div>

@@ -11,6 +11,8 @@ export type PersonalInformationsProps = {
   setWeight: (props: string) => void;
   desiredWeight: string;
   setDesiredWeight: (props: string) => void;
+  imcCalculation: string;
+  setImcCalculation: (props: string) => void;
   questionOne: string;
   setQuestionOne: (props: string) => void;
   questionTwo: string;
@@ -28,6 +30,8 @@ type ContextProps = {
   setWeight: (props: string) => void;
   desiredWeight: string;
   setDesiredWeight: (props: string) => void;
+  imcCalculation: string;
+  setImcCalculation: (props: string) => void;
   questionOne: string;
   setQuestionOne: (props: string) => void;
   questionTwo: string;

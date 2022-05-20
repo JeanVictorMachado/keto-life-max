@@ -1,0 +1,46 @@
+.card-calculation-imc__container {
+  width: 100%;
+}
+
+.card-calculation-imc__imc-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0 16px;
+}
+
+.card-calculation-imc__imc-title p {
+  margin: 0;
+  margin-top: 3px;
+  margin-left: 8px;
+  margin-right: 8px;
+  font-size: 32px;
+  color: rgb(45, 178, 255);
+}
+
+.card-calculation-imc__imc-result-text {
+  text-align: start !important;
+  padding: 0 16px;
+}
+
+.card-calculation-imc__chart {
+  margin-bottom: 32px;
+}
+
+.card-calculation-imc__imc-recommended {
+  width: 100%;
+  max-width: 280px;
+  margin: auto;
+  font-size: 18px !important;
+  color: rgb(220, 220, 220) !important;
+  text-align: center !important;
+}
+
+.card-calculation-imc__imc-recommended strong {
+  color: rgb(45, 178, 255);
+}
+
+.card-calculation-imc__world-health-organization {
+  height: 50px;
+  width: 100%;
+}

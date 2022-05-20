@@ -11,6 +11,7 @@ import { CardChartMyWeight } from "../../components/CardChartMyWeight";
 import { CardBodyChange } from "../../components/CardBodyChange";
 
 import "./styles.css";
+import { CardCalculationImc } from "../../components/CardCalculationImc";
 
 export const Results = () => {
   const gender = useMemo(() => {
@@ -42,7 +43,7 @@ export const Results = () => {
           </div>
 
           <div className="results__title-container">
-            <p className="results__title">Keto Pro</p>
+            <p className="results__title">Keto Life</p>
 
             <p className="results__title">O método que está</p>
 
@@ -89,6 +90,10 @@ export const Results = () => {
 
             <div className="results__metrics-card-container">
               <CardSimilarBody />
+            </div>
+
+            <div className="results__metrics-card-container not-padding-x">
+              <CardCalculationImc />
             </div>
           </div>
 

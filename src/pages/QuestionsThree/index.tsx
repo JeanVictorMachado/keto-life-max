@@ -28,7 +28,7 @@ interface InputValuesProps {
 export const QuestionsThree = () => {
   const navigate = useNavigate();
 
-  const { setAge, setHeight, setWeight, setDesiredWeight } =
+  const { setAge, setHeight, setWeight, setDesiredWeight, setImcCalculation } =
     useContext(ContextAPI);
 
   const [inputValues, setInputValues] = useState({} as InputValuesProps);
@@ -49,6 +49,10 @@ export const QuestionsThree = () => {
     weight,
     desiredWeight,
   }: InputValuesProps) => {
+    const imc = String(
+      Math.round((Number(weight) / (Number(height) * 2)) * 100)
+    );
+
     const personalInformations = JSON.parse(
       localStorage.getItem("@ketopro__personalinformations:") as string
     );
@@ -62,6 +66,7 @@ export const QuestionsThree = () => {
           height,
           weight,
           desiredWeight,
+          imc,
         })
       );
     } else {
@@ -72,6 +77,7 @@ export const QuestionsThree = () => {
           height,
           weight,
           desiredWeight,
+          imc,
         })
       );
     }
@@ -80,6 +86,7 @@ export const QuestionsThree = () => {
     setHeight(height);
     setWeight(weight);
     setDesiredWeight(desiredWeight);
+    setImcCalculation(imc);
   };
 
   const validateErrors = ({

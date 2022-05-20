@@ -17,7 +17,7 @@
 }
 
 .results__logo-container {
-  width: 212px;
+  width: 214px;
   padding: 16px;
 }
 
@@ -110,10 +110,17 @@
 
 .results__metrics-container {
   width: 100%;
+  max-width: 1000px;
+  margin: auto;
   padding: 0 16px 0px 16px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.not-padding-x {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .results__final-submit-button {

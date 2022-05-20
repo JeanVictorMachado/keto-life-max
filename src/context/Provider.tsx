@@ -11,6 +11,7 @@ export const Provider = ({ children }: any) => {
   const [desiredWeight, setDesiredWeight] = useState("");
   const [questionOne, setQuestionOne] = useState("");
   const [questionTwo, setQuestionTwo] = useState("");
+  const [imcCalculation, setImcCalculation] = useState("");
 
   const contextState = {
     gender,
@@ -23,6 +24,8 @@ export const Provider = ({ children }: any) => {
     setWeight,
     desiredWeight,
     setDesiredWeight,
+    imcCalculation,
+    setImcCalculation,
     questionOne,
     setQuestionOne,
     questionTwo,

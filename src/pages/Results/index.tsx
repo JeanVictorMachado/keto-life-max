@@ -16,8 +16,7 @@ import ContextAPI, { localStorageProps } from "../../context/ContextApi";
 import "./styles.css";
 
 export const Results = () => {
-  const { age, height, weight, desiredWeight, imcCalculation } =
-    useContext(ContextAPI);
+  const { age, height, weight, imcCalculation } = useContext(ContextAPI);
 
   const gender = useMemo(() => {
     return localStorage.getItem("@ketolife__gender:");

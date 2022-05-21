@@ -37,7 +37,7 @@
 }
 
 .testimonial__content-right div {
-  font-size: 13px;
+  font-size: 12px;
   margin-top: 6px;
   color: rgb(46, 60, 138);
   display: flex;
@@ -55,4 +55,121 @@
 .testimonial__content-right div span:nth-child(3) {
   margin-left: 3px;
   color: rgb(138, 138, 138);
+}
+
+.testimonial__icons-bottoms {
+  margin: 0 !important;
+
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+.testimonial__like {
+  min-width: 50px;
+  height: 25px;
+  padding: 2px 5px;
+  margin-top: -5px !important;
+  border-radius: 10px;
+  background: #dcdcdc;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.199);
+
+  display: flex;
+  align-items: center;
+}
+
+.testimonial__like img {
+  width: 16px;
+  margin-right: 3px;
+}
+
+.testimonial__like img:nth-child(2) {
+  margin-right: 0px;
+}
+
+.testimonial__like span {
+  font-size: 13px;
+}
+
+/* .testimonial__response-container {
+} */
+
+.testimonial__response-testimonial {
+  width: 100%;
+  min-height: 50px;
+  margin-top: 16px !important;
+
+  display: flex;
+}
+
+.testimonial-response__content-right {
+  flex: 1;
+  min-height: 50px;
+  margin: 0 !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.testimonial-response__content-right p {
+  font-size: 16px;
+}
+
+.testimonial-response__content-right span {
+  font-size: 16px;
+}
+
+.testimonial-response__icons-bottoms {
+  margin: 0 !important;
+
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+.testimonial-response__icons-bottoms div {
+  margin-top: 6px;
+}
+
+.testimonial-response__icons-bottoms div span {
+  font-size: 12px;
+  margin-top: 0 !important;
+}
+
+.testimonial-response__content-right div span:nth-child(1) {
+  margin-right: 3px;
+}
+
+.testimonial-response__content-right div span:nth-child(2) {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.testimonial-response__content-right div span:nth-child(3) {
+  margin-left: 3px;
+  color: rgb(138, 138, 138);
+}
+
+.testimonial-response__like {
+  min-width: 50px;
+  height: 25px;
+  padding: 2px 5px;
+  margin-top: -5px !important;
+  border-radius: 10px;
+  background: #dcdcdc;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.199);
+
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-response__like img {
+  width: 16px;
+  margin-right: 3px;
+}
+
+.testimonial-response__like img:nth-child(2) {
+  margin-right: 0px;
+}
+
+.testimonial-response__like span {
+  font-size: 13px;
 }

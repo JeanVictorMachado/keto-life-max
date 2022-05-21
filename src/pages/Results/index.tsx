@@ -11,7 +11,12 @@ import { CardChartMyWeight } from "../../components/CardChartMyWeight";
 import { CardBodyChange } from "../../components/CardBodyChange";
 import { CardCalculationImc } from "../../components/CardCalculationImc";
 import { CardTestimonial } from "../../components/CardTestimonial";
-import ContextAPI, { localStorageProps } from "../../context/ContextApi";
+import ContextAPI, {
+  localStorageProps,
+  TestimonialProps,
+} from "../../context/ContextApi";
+
+import testimonialScripts from "../../testimonials/testimonial_1.json";
 
 import "./styles.css";
 
@@ -56,6 +61,10 @@ export const Results = () => {
 
     return "";
   }, [weight]);
+
+  const testimonial = useMemo(() => {
+    return testimonialScripts as TestimonialProps[];
+  }, []);
 
   return (
     <>
@@ -143,7 +152,11 @@ export const Results = () => {
           </div>
 
           <div className="results__card-testimonial">
-            <CardTestimonial />
+            <CardTestimonial testimonials={testimonial} />
+          </div>
+
+          <div className="results__final-submit-button">
+            <SubmitButton text="Assistir aula grátis!" />
           </div>
 
           <Footer />

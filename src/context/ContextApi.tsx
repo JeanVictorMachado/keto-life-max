@@ -1,5 +1,14 @@
 import { createContext } from "react";
 
+export type TestimonialProps = {
+  image: string;
+  name: string;
+  testimonial: string;
+  likes: string;
+  testimonialTime: string;
+  response?: TestimonialProps[];
+};
+
 export type localStorageProps = {
   age?: string;
   desiredWeight?: string;

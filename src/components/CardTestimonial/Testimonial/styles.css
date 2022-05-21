@@ -97,6 +97,8 @@
   width: 100%;
   min-height: 50px;
   margin-top: 16px !important;
+  border-left: 1px solid rgb(185, 185, 185);
+  padding-left: 8px;
 
   display: flex;
 }
@@ -116,6 +118,17 @@
 
 .testimonial-response__content-right span {
   font-size: 16px;
+}
+
+.testimonial-response__text {
+  padding: 6px 8px;
+  display: block;
+  margin: 0 !important;
+  line-height: 20px;
+  border-radius: 10px;
+  color: rgb(29, 29, 29);
+  background: #ececec;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.199);
 }
 
 .testimonial-response__icons-bottoms {

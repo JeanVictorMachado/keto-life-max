@@ -10,7 +10,7 @@ interface CardTestimonialProps {
 export const CardTestimonial = ({ testimonials }: CardTestimonialProps) => {
   return (
     <div className="card-testimonial__container">
-      <h3 className="card-testimonial__title">18 comentários</h3>
+      <h3 className="card-testimonial__title">{`${9} comentários`}</h3>
 
       <div className="card-testimonial__content">
         {testimonials?.map((item, index) => (

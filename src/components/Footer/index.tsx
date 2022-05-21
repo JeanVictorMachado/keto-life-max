@@ -19,6 +19,8 @@ export const Footer = () => {
           </Link>
         </div>
 
+        <div className="footer__bar" />
+
         <LogoKetoPro />
       </div>
 

@@ -20,7 +20,9 @@ export const CardCalculationImc = ({ imcValue }: CardCalculationImcProps) => {
         O seu <p>IMC</p> atual
       </h1>
 
-      <p className="card-calculation-imc__imc-result-text">Acima do peso</p>
+      <p className="card-calculation-imc__imc-result-text">
+        {obesityDegreesValue}
+      </p>
 
       <div className="card-calculation-imc__chart">
         <CalculationImcSVG imcValue={imcValue} />

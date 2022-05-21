@@ -1,12 +1,15 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useMemo, useState } from "react";
 import { BookIcon } from "../../components/BookIcon";
 import { ButtonsGender } from "../../components/ButtonsGender";
+import { CardTestimonial } from "../../components/CardTestimonial";
 import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
 import { Loading } from "../../components/Loading";
 import { PerfilIcon } from "../../components/PerfilIcon";
 import { ToastCookies } from "../../components/ToastCookies";
-import ContextAPI from "../../context/ContextApi";
+import ContextAPI, { TestimonialProps } from "../../context/ContextApi";
+
+import testimonialScripts from "../../testimonials/testimonial_1.json";
 
 import "./styles.css";
 
@@ -15,6 +18,10 @@ export const Home = () => {
 
   const { showLoading, showToastCookies, setShowLoading, setShowToastCookies } =
     useContext(ContextAPI);
+
+  const testimonial = useMemo(() => {
+    return testimonialScripts as TestimonialProps[];
+  }, []);
 
   const handleToastCookies = (isToast: boolean) => {
     setToastCookies(isToast);
@@ -102,6 +109,19 @@ export const Home = () => {
                 tudo eficaz na perda de peso.
               </p>
             </div>
+
+            <div className="home-content__button-start-now-container">
+              <a
+                href="#home-content__call-method"
+                className="home-content__button-start-now"
+              >
+                Comece Agora
+              </a>
+            </div>
+
+            <section className="home-content__testimonial-container">
+              <CardTestimonial testimonials={testimonial} />
+            </section>
 
             <div className="home-content__button-start-now-container">
               <a

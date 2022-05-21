@@ -96,12 +96,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  animation: animationButtonHome 1s ease infinite;
 }
 
 .home-content__button-start-now:hover {
   transition: 0.3s;
   filter: brightness(0.9);
-  animation: animationButtonHome 1s ease infinite;
 }
 
 @keyframes animationButtonHome {
@@ -114,4 +115,8 @@
   100% {
     transform: scale(1);
   }
+}
+
+.home-content__testimonial-container {
+  padding-top: 16px !important;
 }

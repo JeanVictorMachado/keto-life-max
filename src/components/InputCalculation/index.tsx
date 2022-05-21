@@ -22,7 +22,7 @@ export const InputCalculation = ({
   onChange,
 }: InputCalculationProps) => {
   const gender = useMemo(() => {
-    return localStorage.getItem("@ketopro__gender:");
+    return localStorage.getItem("@ketolife__gender:");
   }, []);
 
   const isError = useMemo(() => {

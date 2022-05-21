@@ -1,5 +1,16 @@
 import { createContext } from "react";
 
+export type localStorageProps = {
+  age?: string;
+  desiredWeight?: string;
+  gender?: string;
+  height?: string;
+  imc?: string;
+  questionOne?: string;
+  questionTwo?: string;
+  weight?: string;
+};
+
 export type PersonalInformationsProps = {
   gender: string;
   setGender: (props: string) => void;

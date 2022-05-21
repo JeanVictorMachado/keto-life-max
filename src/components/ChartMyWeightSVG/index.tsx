@@ -149,8 +149,8 @@ export const ChartMyWeightSVG = ({
           >
             <text
               id="circle-down-value-2"
-              dx="-34"
-              dy="-16"
+              dx="-46"
+              dy="-18"
               font-family='"weight-down:::Roboto"'
               font-size="16"
               font-weight="700"

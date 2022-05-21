@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useContext, useMemo } from "react";
 import { Footer } from "../../components/Footer";
 import { Loading } from "../../components/Loading";
 import { LogoKetoPro } from "../../components/LogoKetoPro";
@@ -9,14 +9,53 @@ import { GreenCircle } from "../../components/GreenCircle";
 import { SubmitButton } from "../../components/SubmitButton";
 import { CardChartMyWeight } from "../../components/CardChartMyWeight";
 import { CardBodyChange } from "../../components/CardBodyChange";
+import { CardCalculationImc } from "../../components/CardCalculationImc";
+import ContextAPI, { localStorageProps } from "../../context/ContextApi";
 
 import "./styles.css";
-import { CardCalculationImc } from "../../components/CardCalculationImc";
 
 export const Results = () => {
+  const { age, height, weight, desiredWeight, imcCalculation } =
+    useContext(ContextAPI);
+
   const gender = useMemo(() => {
-    return localStorage.getItem("@ketopro__gender:");
+    return localStorage.getItem("@ketolife__gender:");
   }, []);
+
+  const personalinformations: localStorageProps = useMemo(() => {
+    const localStorageResponse = localStorage.getItem(
+      "@ketolife__personalinformations:"
+    );
+
+    if (localStorageResponse) {
+      return JSON.parse(localStorageResponse);
+    }
+  }, []);
+
+  const achievableWeight = useMemo(() => {
+    const localStorageResponse = localStorage.getItem(
+      "@ketolife__personalinformations:"
+    );
+
+    if (weight) {
+      const lostPercent = (Number(weight) * 11) / 100;
+
+      return `${(Number(weight) - lostPercent).toFixed(1)}Kg`;
+    }
+
+    if (localStorageResponse) {
+      const personalinformations: localStorageProps =
+        JSON.parse(localStorageResponse);
+
+      const lostPercent = (Number(personalinformations?.weight) * 11) / 100;
+
+      return `${(Number(personalinformations?.weight) - lostPercent).toFixed(
+        1
+      )}Kg`;
+    }
+
+    return "";
+  }, [weight]);
 
   return (
     <>
@@ -59,17 +98,17 @@ export const Results = () => {
 
             <div className="results__personal-informations-container">
               <div className="results__personal-informations">
-                <span>32</span>
+                <span>{age || personalinformations?.age}</span>
                 <p>Idade</p>
               </div>
 
               <div className="results__personal-informations">
-                <span>170</span>
+                <span>{height || personalinformations?.height}</span>
                 <p>Altura (CM)</p>
               </div>
 
               <div className="results__personal-informations">
-                <span>80</span>
+                <span>{weight || personalinformations?.weight}</span>
                 <p>Peso (Kg)</p>
               </div>
             </div>
@@ -78,9 +117,9 @@ export const Results = () => {
           <div className="results__metrics-container">
             <div className="results__metrics-card-container">
               <CardChartMyWeight
-                bodyWeight="74Kg"
-                currentWeight="82Kg"
-                desiredWeigh="74Kg"
+                bodyWeight={achievableWeight}
+                currentWeight={`${weight || personalinformations?.weight}Kg`}
+                desiredWeigh={achievableWeight}
               />
             </div>
 
@@ -93,7 +132,9 @@ export const Results = () => {
             </div>
 
             <div className="results__metrics-card-container not-padding-x">
-              <CardCalculationImc />
+              <CardCalculationImc
+                imcValue={imcCalculation || personalinformations?.imc}
+              />
             </div>
           </div>
 

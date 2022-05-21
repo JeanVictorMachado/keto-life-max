@@ -50,16 +50,16 @@ export const QuestionsThree = () => {
     desiredWeight,
   }: InputValuesProps) => {
     const imc = String(
-      Math.round((Number(weight) / (Number(height) * 2)) * 100)
+      ((Number(weight) / (Number(height) * 2)) * 100).toFixed(1)
     );
 
     const personalInformations = JSON.parse(
-      localStorage.getItem("@ketopro__personalinformations:") as string
+      localStorage.getItem("@ketolife__personalinformations:") as string
     );
 
     if (personalInformations) {
       localStorage.setItem(
-        "@ketopro__personalinformations:",
+        "@ketolife__personalinformations:",
         JSON.stringify({
           ...personalInformations,
           age,
@@ -71,7 +71,7 @@ export const QuestionsThree = () => {
       );
     } else {
       localStorage.setItem(
-        "@ketopro__personalinformations:",
+        "@ketolife__personalinformations:",
         JSON.stringify({
           age,
           height,

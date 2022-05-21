@@ -13,12 +13,12 @@ export const QuestionsTwo = () => {
 
   const handleClick = (value: string) => {
     const personalInformations = JSON.parse(
-      localStorage.getItem("@ketopro__personalinformations:") as string
+      localStorage.getItem("@ketolife__personalinformations:") as string
     );
 
     if (personalInformations) {
       localStorage.setItem(
-        "@ketopro__personalinformations:",
+        "@ketolife__personalinformations:",
         JSON.stringify({
           ...personalInformations,
           questionTwo: value,
@@ -26,7 +26,7 @@ export const QuestionsTwo = () => {
       );
     } else {
       localStorage.setItem(
-        "@ketopro__personalinformations:",
+        "@ketolife__personalinformations:",
         JSON.stringify({
           questionTwo: value,
         })

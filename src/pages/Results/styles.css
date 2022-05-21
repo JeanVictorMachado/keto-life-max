@@ -3,7 +3,7 @@
   background-image: linear-gradient(
       to bottom,
       transparent -35%,
-      #404254 11%,
+      #404254 9.5%,
       rgb(20, 20, 48)
     ),
     url("../../../public/keto-diet-image-1.jpeg");
@@ -44,6 +44,7 @@
   color: rgb(206, 206, 206);
   font-size: 30px;
   text-align: left;
+  text-shadow: 0 0 5px #000000;
 }
 
 .results__content {

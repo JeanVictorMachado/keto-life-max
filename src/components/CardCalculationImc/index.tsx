@@ -1,8 +1,19 @@
+import { useMemo } from "react";
 import { CalculationImcSVG } from "../CalculationImcSVG";
+
+import { obesityDegrees } from "../../helpers/obesityDegrees";
 
 import "./styles.css";
 
-export const CardCalculationImc = () => {
+interface CardCalculationImcProps {
+  imcValue?: string;
+}
+
+export const CardCalculationImc = ({ imcValue }: CardCalculationImcProps) => {
+  const obesityDegreesValue = useMemo(() => {
+    return obesityDegrees(imcValue);
+  }, [imcValue]);
+
   return (
     <div className="card-calculation-imc__container">
       <h1 className="card-calculation-imc__imc-title">
@@ -12,7 +23,7 @@ export const CardCalculationImc = () => {
       <p className="card-calculation-imc__imc-result-text">Acima do peso</p>
 
       <div className="card-calculation-imc__chart">
-        <CalculationImcSVG />
+        <CalculationImcSVG imcValue={imcValue} />
       </div>
 
       <p className="card-calculation-imc__imc-recommended">

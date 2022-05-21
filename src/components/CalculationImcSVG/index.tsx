@@ -1,15 +1,19 @@
 import "./styles.css";
 
 interface CalculationImcSVGProps {
-  manColor?: string;
-  shadowMan?: string;
-  shadowManSecond?: string;
+  imcValue?: string;
+  imcShadow?: string;
+  imcShadowSecond?: string;
+  imcCircleColor?: string;
+  imcShadowCircleColor?: string;
 }
 
 export const CalculationImcSVG = ({
-  manColor = "#a8e063",
-  shadowMan = "rgba(168,224,99,.35)",
-  shadowManSecond = "rgba(168,224,99,0)",
+  imcValue,
+  imcCircleColor = "#F0F0F0",
+  imcShadowCircleColor = "#151226",
+  imcShadow = "hsla(0,0%,100%,0)",
+  imcShadowSecond = "hsla(0,0%,100%,.1)",
 }: CalculationImcSVGProps) => {
   return (
     <svg
@@ -35,12 +39,12 @@ export const CalculationImcSVG = ({
           <stop
             id="bmi-phase-3-chart-gradient-fill-0"
             offset="0%"
-            stop-color="hsla(0,0%,100%,.1)"
+            stop-color={imcShadowSecond}
           ></stop>
           <stop
             id="bmi-phase-3-chart-gradient-fill-1"
             offset="100%"
-            stop-color="hsla(0,0%,100%,0)"
+            stop-color={imcShadow}
           ></stop>
         </linearGradient>
         <linearGradient
@@ -110,8 +114,8 @@ export const CalculationImcSVG = ({
             id="bmi-phase-3-pointer-3"
             r="9"
             transform="translate(0,0)"
-            fill="#F0F0F0"
-            stroke="#151226"
+            fill={imcCircleColor}
+            stroke={imcShadowCircleColor}
             stroke-width="4"
           ></circle>
         </g>
@@ -135,7 +139,7 @@ export const CalculationImcSVG = ({
             font-style="normal"
             fill="#F0F0F0"
           >
-            26.2
+            {imcValue}
           </tspan>
         </text>
       </g>

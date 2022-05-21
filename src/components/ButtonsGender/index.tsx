@@ -12,15 +12,15 @@ export const ButtonsGender = ({ id }: ButtonsGenderProps) => {
   const { setGender } = useContext(ContextAPI);
 
   const handleSaveGender = (gender: string) => {
-    localStorage.setItem("@ketopro__gender:", gender);
+    localStorage.setItem("@ketolife__gender:", gender);
 
     const personalInformations = JSON.parse(
-      localStorage.getItem("@ketopro__personalinformations:") as string
+      localStorage.getItem("@ketolife__personalinformations:") as string
     );
 
     if (personalInformations) {
       localStorage.setItem(
-        "@ketopro__personalinformations:",
+        "@ketolife__personalinformations:",
         JSON.stringify({
           ...personalInformations,
           gender,
@@ -28,7 +28,7 @@ export const ButtonsGender = ({ id }: ButtonsGenderProps) => {
       );
     } else {
       localStorage.setItem(
-        "@ketopro__personalinformations:",
+        "@ketolife__personalinformations:",
         JSON.stringify({
           gender,
         })

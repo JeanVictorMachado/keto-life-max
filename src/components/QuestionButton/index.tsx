@@ -13,7 +13,7 @@ export const QuestionButton = ({
   text,
   onClick,
 }: QuestionButtonProps) => {
-  const gender = localStorage.getItem("@ketopro__gender:");
+  const gender = localStorage.getItem("@ketolife__gender:");
 
   return (
     <Link

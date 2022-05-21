@@ -3,9 +3,9 @@ import { ChartMyWeightSVG } from "../ChartMyWeightSVG";
 import "./styles.css";
 
 interface CardChartMyWeightProps {
-  bodyWeight: string;
-  currentWeight: string;
-  desiredWeigh: string;
+  bodyWeight?: string;
+  currentWeight?: string;
+  desiredWeigh?: string;
 }
 
 export const CardChartMyWeight = ({

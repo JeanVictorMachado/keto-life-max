@@ -1,0 +1,17 @@
+.card-testimonial__container {
+  width: 100%;
+  border-radius: 10px;
+  padding: 16px 16px 1px 16px;
+  background: #dcdcdc;
+}
+
+.card-testimonial__title {
+  font-size: 18px;
+  padding-bottom: 12px;
+  color: rgb(32, 32, 32);
+  border-bottom: 1px solid rgb(190, 190, 190);
+}
+
+.card-testimonial__content {
+  padding-top: 16px;
+}

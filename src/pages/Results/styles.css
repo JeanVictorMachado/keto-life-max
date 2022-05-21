@@ -131,3 +131,9 @@
   display: flex;
   justify-content: center;
 }
+
+.results__card-testimonial {
+  max-width: 980px;
+  margin: auto;
+  padding: 0 16px 32px 16px;
+}

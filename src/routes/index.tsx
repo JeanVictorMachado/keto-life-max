@@ -6,6 +6,7 @@ import { QuestionsOne } from "../pages/QuestionsOne";
 import { QuestionsThree } from "../pages/QuestionsThree";
 import { QuestionsTwo } from "../pages/QuestionsTwo";
 import { Results } from "../pages/Results";
+import { SalesPage } from "../pages/SalesPage";
 import { TermsOfUse } from "../pages/TermsOfUse";
 
 export const Routes = () => {
@@ -18,6 +19,7 @@ export const Routes = () => {
       <Route path="/2-3" element={<QuestionsTwo />} />
       <Route path="/3-3" element={<QuestionsThree />} />
       <Route path="/results" element={<Results />} />
+      <Route path="/pv" element={<SalesPage />} />
     </HandleRoutes>
   );
 };

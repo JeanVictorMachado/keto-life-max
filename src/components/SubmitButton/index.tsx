@@ -6,6 +6,7 @@ interface SubmitButtonProps {
   disabled?: boolean;
   marginBottom?: string;
   type?: "button" | "submit" | "reset" | undefined;
+  onClick?: () => void;
 }
 
 export const SubmitButton = ({
@@ -14,6 +15,7 @@ export const SubmitButton = ({
   type,
   disabled = false,
   marginBottom,
+  onClick,
 }: SubmitButtonProps) => {
   return (
     <button
@@ -21,6 +23,7 @@ export const SubmitButton = ({
       name={name}
       type={type}
       disabled={disabled}
+      onClick={onClick}
       style={{
         marginBottom,
       }}

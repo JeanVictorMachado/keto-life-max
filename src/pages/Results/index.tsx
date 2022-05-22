@@ -1,4 +1,5 @@
 import { useContext, useMemo } from "react";
+import { useNavigate } from "react-router-dom";
 import { Footer } from "../../components/Footer";
 import { Loading } from "../../components/Loading";
 import { LogoKetoPro } from "../../components/LogoKetoPro";
@@ -21,6 +22,8 @@ import testimonialScripts from "../../testimonials/testimonial_1.json";
 import "./styles.css";
 
 export const Results = () => {
+  const navigate = useNavigate();
+
   const { age, height, weight, imcCalculation } = useContext(ContextAPI);
 
   const gender = useMemo(() => {
@@ -66,6 +69,10 @@ export const Results = () => {
     return testimonialScripts as TestimonialProps[];
   }, []);
 
+  const handleRedirect = () => {
+    navigate("/pv");
+  };
+
   return (
     <>
       {false ? (
@@ -99,7 +106,10 @@ export const Results = () => {
           </div>
 
           <div className="results__content">
-            <SubmitButton text="Assistir aula grátis!" />
+            <SubmitButton
+              text="Assistir aula grátis!"
+              onClick={handleRedirect}
+            />
           </div>
 
           <div className="results__result-resume-container">
@@ -148,7 +158,10 @@ export const Results = () => {
           </div>
 
           <div className="results__final-submit-button">
-            <SubmitButton text="Assistir aula grátis!" />
+            <SubmitButton
+              text="Assistir aula grátis!"
+              onClick={handleRedirect}
+            />
           </div>
 
           <div className="results__card-testimonial">
@@ -156,7 +169,10 @@ export const Results = () => {
           </div>
 
           <div className="results__final-submit-button">
-            <SubmitButton text="Assistir aula grátis!" />
+            <SubmitButton
+              text="Assistir aula grátis!"
+              onClick={handleRedirect}
+            />
           </div>
 
           <Footer />

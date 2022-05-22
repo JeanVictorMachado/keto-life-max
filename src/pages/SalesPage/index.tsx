@@ -17,9 +17,19 @@ export const SalesPage = () => {
       <div className="sales-page__header-color"></div>
 
       <div className="sales-page__title-container">
+        <p>Especialista em emagrecimento saudável</p>
+      </div>
+
+      <div className="sales-page__title-container-2">
         <p>
-          Você sabia que é possível emagrecer muito mesmo podendo comer de tudo?
+          <strong>Conheça o método</strong> que está sendo mais utilizado no
+          mundo em emagrecimento e descubra porque você nunca{" "}
+          <strong>emagrece de forma definitiva</strong>
         </p>
+      </div>
+
+      <div className="sales-page__title-container-3">
+        <p>[100% Natural e Garantido!]</p>
       </div>
 
       <div className="sales-page__video-container">

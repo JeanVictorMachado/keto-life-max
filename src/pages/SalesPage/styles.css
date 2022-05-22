@@ -10,15 +10,94 @@
 }
 
 .sales-page__title-container {
-  max-width: 500px;
+  max-width: 700px;
   margin: auto;
   margin-top: 32px;
+  padding: 0 16px;
 }
 
 .sales-page__title-container p {
   text-align: center;
+  color: #97a7ca;
+  font-size: 30px;
+}
+
+@media (max-width: 540px) {
+  .sales-page__title-container p {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 460px) {
+  .sales-page__title-container p {
+    font-size: 20px;
+  }
+}
+
+.sales-page__title-container-2 {
+  max-width: 700px;
+  margin: auto;
+  margin-top: 32px;
+  padding: 0 16px;
+}
+
+.sales-page__title-container-2 p {
+  text-align: center;
   color: #eeeeee;
   font-size: 30px;
+}
+
+.sales-page__title-container-2 p strong {
+  color: #f53373;
+}
+
+@media (max-width: 460px) {
+  .sales-page__title-container-2 {
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 540px) {
+  .sales-page__title-container-2 p {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 460px) {
+  .sales-page__title-container-2 p {
+    font-size: 20px;
+  }
+}
+
+.sales-page__title-container-3 {
+  max-width: 700px;
+  margin: auto;
+  margin-top: 16px;
+  padding: 0 16px;
+}
+
+.sales-page__title-container-3 p {
+  text-align: center;
+  color: #eeeeee;
+  font-size: 30px;
+}
+
+@media (max-width: 460px) {
+  .sales-page__title-container-3 {
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 540px) {
+  .sales-page__title-container-3 p {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 460px) {
+  .sales-page__title-container-3 p {
+    font-size: 20px;
+  }
 }
 
 .sales-page__video-container {

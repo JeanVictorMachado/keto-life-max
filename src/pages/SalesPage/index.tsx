@@ -31,7 +31,7 @@ export const SalesPage = () => {
   return (
     <div className="sales-page__container">
       <div className="sales-page__header-color">
-        {showTimeCounter && <TimeCounter />}
+        {showTimeCounter && <TimeCounter hourQuantity="2" />}
       </div>
 
       <div className="sales-page__title-container">

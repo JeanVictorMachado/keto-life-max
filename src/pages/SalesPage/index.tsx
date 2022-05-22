@@ -9,8 +9,10 @@ import testimonialScripts from "../../testimonials/testimonial_1.json";
 
 import "./styles.css";
 import { SalesButton } from "../../components/SalesButton";
+import { TimeCounter } from "../../components/TimeCounter";
 
 export const SalesPage = () => {
+  const [showTimeCounter, setShowTimeCounter] = useState(false);
   const [showSalesButton, setShowSalesButton] = useState(false);
 
   const testimonial = useMemo(() => {
@@ -21,13 +23,16 @@ export const SalesPage = () => {
     const showTime = 3000;
 
     setTimeout(() => {
+      setShowTimeCounter(true);
       setShowSalesButton(true);
     }, showTime);
   }, []);
 
   return (
     <div className="sales-page__container">
-      <div className="sales-page__header-color"></div>
+      <div className="sales-page__header-color">
+        {showTimeCounter && <TimeCounter />}
+      </div>
 
       <div className="sales-page__title-container">
         <p>Especialista em emagrecimento saudável</p>

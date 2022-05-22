@@ -3,6 +3,8 @@ import { CardTestimonial } from "../../components/CardTestimonial";
 import { Footer } from "../../components/Footer";
 import { TestimonialProps } from "../../context/ContextApi";
 
+import { AiFillSound } from "react-icons/ai";
+
 import testimonialScripts from "../../testimonials/testimonial_1.json";
 
 import "./styles.css";
@@ -43,6 +45,11 @@ export const SalesPage = () => {
             height="315"
           />
         </div>
+      </div>
+
+      <div className="sales-page__sound-text">
+        <AiFillSound className="sales-page__sound-icon" color="#97a7ca" />
+        <p>Verifique se o seu som está ligado.</p>
       </div>
 
       <section className="sales-page__testimonial-container">

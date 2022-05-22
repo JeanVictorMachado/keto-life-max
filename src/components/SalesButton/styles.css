@@ -43,3 +43,22 @@
     transform: scale(1);
   }
 }
+
+.sales-button__flags-cards-container {
+  width: 100%;
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.sales-button__flags-cards {
+  width: 40px;
+  height: 25px;
+  margin: 0 4px;
+  padding: 3px;
+  border-radius: 5px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

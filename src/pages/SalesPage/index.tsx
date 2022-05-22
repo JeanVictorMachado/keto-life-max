@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { CardTestimonial } from "../../components/CardTestimonial";
 import { Footer } from "../../components/Footer";
 import { TestimonialProps } from "../../context/ContextApi";
@@ -11,8 +11,18 @@ import "./styles.css";
 import { SalesButton } from "../../components/SalesButton";
 
 export const SalesPage = () => {
+  const [showSalesButton, setShowSalesButton] = useState(false);
+
   const testimonial = useMemo(() => {
     return testimonialScripts as TestimonialProps[];
+  }, []);
+
+  useEffect(() => {
+    const showTime = 3000;
+
+    setTimeout(() => {
+      setShowSalesButton(true);
+    }, showTime);
   }, []);
 
   return (
@@ -53,9 +63,11 @@ export const SalesPage = () => {
         <p>Verifique se o seu som está ligado.</p>
       </div>
 
-      <section className="sales-page__sales-button-container">
-        <SalesButton textButton="SIM!!! QUERO MUDAR DE VIDA AGORA!" />
-      </section>
+      {showSalesButton && (
+        <section className="sales-page__sales-button-container">
+          <SalesButton textButton="SIM!!! QUERO MUDAR DE VIDA AGORA!" />
+        </section>
+      )}
 
       <section className="sales-page__testimonial-container">
         <CardTestimonial testimonials={testimonial} />

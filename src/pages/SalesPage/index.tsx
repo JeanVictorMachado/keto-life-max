@@ -73,6 +73,12 @@ export const SalesPage = () => {
         <CardTestimonial testimonials={testimonial} />
       </section>
 
+      {showSalesButton && (
+        <section className="sales-page__sales-button-container">
+          <SalesButton textButton="SIM!!! QUERO MUDAR DE VIDA AGORA!" />
+        </section>
+      )}
+
       <Footer />
     </div>
   );

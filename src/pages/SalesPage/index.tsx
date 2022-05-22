@@ -8,6 +8,7 @@ import { AiFillSound } from "react-icons/ai";
 import testimonialScripts from "../../testimonials/testimonial_1.json";
 
 import "./styles.css";
+import { SalesButton } from "../../components/SalesButton";
 
 export const SalesPage = () => {
   const testimonial = useMemo(() => {
@@ -51,6 +52,10 @@ export const SalesPage = () => {
         <AiFillSound className="sales-page__sound-icon" color="#97a7ca" />
         <p>Verifique se o seu som está ligado.</p>
       </div>
+
+      <section className="sales-page__sales-button-container">
+        <SalesButton textButton="SIM!!! QUERO MUDAR DE VIDA AGORA!" />
+      </section>
 
       <section className="sales-page__testimonial-container">
         <CardTestimonial testimonials={testimonial} />

@@ -156,6 +156,13 @@
   }
 }
 
+.sales-page__sales-button-container {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 32px;
+  padding: 0 16px;
+}
+
 .sales-page__testimonial-container {
   max-width: 700px;
   margin: auto;

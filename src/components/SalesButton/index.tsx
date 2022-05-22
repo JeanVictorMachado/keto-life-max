@@ -7,6 +7,10 @@ interface SalesButtonProps {
 export const SalesButton = ({ textButton }: SalesButtonProps) => {
   return (
     <div className="sales-button__container">
+      <span className="sales-button__price">
+        12x de R$9,90 ou à vista R$97,00
+      </span>
+
       <button className="sales-button__button">{textButton}</button>
 
       <div className="sales-button__flags-cards-container">
@@ -66,7 +70,7 @@ export const SalesButton = ({ textButton }: SalesButtonProps) => {
             alt="Logo Pix card"
             style={{
               width: "95%",
-              height: "70%",
+              height: "60%",
             }}
           />
         </div>
@@ -80,6 +84,16 @@ export const SalesButton = ({ textButton }: SalesButtonProps) => {
             }}
           />
         </div>
+      </div>
+
+      <div className="sales-button__security-page">
+        <img
+          src="checkout-image.webp"
+          alt="Imagem  de segurança da página"
+          style={{
+            width: "100%",
+          }}
+        />
       </div>
     </div>
   );

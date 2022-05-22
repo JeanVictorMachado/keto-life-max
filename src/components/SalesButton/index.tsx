@@ -62,6 +62,16 @@ export const SalesButton = ({ textButton }: SalesButtonProps) => {
         </div>
         <div className="sales-button__flags-cards">
           <img
+            src="pix-logo.png"
+            alt="Logo Pix card"
+            style={{
+              width: "95%",
+              height: "70%",
+            }}
+          />
+        </div>
+        <div className="sales-button__flags-cards">
+          <img
             src="boleto-logo.png"
             alt="Logo Boleto card"
             style={{

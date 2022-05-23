@@ -27,7 +27,12 @@ export const PresellPage = () => {
           </p>
         </div>
 
-        <SubmitButton text="ASSISTIR AGORA!" onClick={() => navigate("/pv")} />
+        <SubmitButton
+          text="ASSISTIR AGORA!"
+          fontSize="26px"
+          fontWeight="600"
+          onClick={() => navigate("/pv")}
+        />
 
         <img
           src="security-site.png"

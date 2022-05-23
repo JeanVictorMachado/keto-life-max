@@ -17,7 +17,7 @@ import ContextAPI, {
   TestimonialProps,
 } from "../../context/ContextApi";
 
-import testimonialScripts from "../../testimonials/testimonial_1.json";
+import testimonialScripts from "../../externalData/testimonial_1.json";
 
 import "./styles.css";
 

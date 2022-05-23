@@ -2,18 +2,19 @@ import { useEffect, useMemo, useState } from "react";
 import { CardTestimonial } from "../../components/CardTestimonial";
 import { Footer } from "../../components/Footer";
 import { TestimonialProps } from "../../context/ContextApi";
-
-import { AiFillSound } from "react-icons/ai";
-
-import testimonialScripts from "../../testimonials/testimonial_1.json";
-
-import "./styles.css";
 import { SalesButton } from "../../components/SalesButton";
 import { TimeCounter } from "../../components/TimeCounter";
+import { SliderComponent } from "../../components/SliderComponent";
+import { AiFillSound } from "react-icons/ai";
+
+import testimonialScripts from "../../externalData/testimonial_1.json";
+
+import "./styles.css";
 
 export const SalesPage = () => {
   const [showTimeCounter, setShowTimeCounter] = useState(false);
   const [showSalesButton, setShowSalesButton] = useState(false);
+  const [showBeforeAfterImg, setShowBeforeAfterImg] = useState(false);
 
   const testimonial = useMemo(() => {
     return testimonialScripts as TestimonialProps[];
@@ -25,6 +26,7 @@ export const SalesPage = () => {
     setTimeout(() => {
       setShowTimeCounter(true);
       setShowSalesButton(true);
+      setShowBeforeAfterImg(true);
     }, showTime);
   }, []);
 
@@ -71,6 +73,12 @@ export const SalesPage = () => {
       {showSalesButton && (
         <section className="sales-page__sales-button-container">
           <SalesButton textButton="SIM!!! QUERO MUDAR DE VIDA AGORA!" />
+        </section>
+      )}
+
+      {showBeforeAfterImg && (
+        <section className="sales-page__slider-container">
+          <SliderComponent />
         </section>
       )}
 

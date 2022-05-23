@@ -86,105 +86,112 @@ export const Results = () => {
       {isLoading ? (
         <Loading isProcessing />
       ) : (
-        <div className="results__comtainer">
-          <div className="results__header-container">
-            <div className="results__logo-container">
-              <LogoKetoPro />
-            </div>
+        <>
+          <div className="home__header-box" />
 
-            <div className="results__green-circle-container">
-              <GreenCircle
-                svg={
-                  gender === "male" ? (
-                    <BiFace size={45} color="#606060" />
-                  ) : (
-                    <MdOutlineFaceRetouchingNatural size={45} color="#606060" />
-                  )
-                }
-              />
-            </div>
-          </div>
-
-          <div className="results__title-container">
-            <p className="results__title">Keto Life</p>
-
-            <p className="results__title">O método que está</p>
-
-            <p className="results__title">revolucionando o Mundo.</p>
-          </div>
-
-          <div className="results__content">
-            <SubmitButton
-              text="Assistir aula grátis!"
-              onClick={handleRedirect}
-            />
-          </div>
-
-          <div className="results__result-resume-container">
-            <p className="results__result-resume-text">SEUS RESULTADOS</p>
-
-            <div className="results__personal-informations-container">
-              <div className="results__personal-informations">
-                <span>{age || personalinformations?.age}</span>
-                <p>Idade</p>
+          <div className="results__comtainer">
+            <div className="results__header-container">
+              <div className="results__logo-container">
+                <LogoKetoPro />
               </div>
 
-              <div className="results__personal-informations">
-                <span>{height || personalinformations?.height}</span>
-                <p>Altura (CM)</p>
-              </div>
-
-              <div className="results__personal-informations">
-                <span>{weight || personalinformations?.weight}</span>
-                <p>Peso (Kg)</p>
+              <div className="results__green-circle-container">
+                <GreenCircle
+                  svg={
+                    gender === "male" ? (
+                      <BiFace size={45} color="#606060" />
+                    ) : (
+                      <MdOutlineFaceRetouchingNatural
+                        size={45}
+                        color="#606060"
+                      />
+                    )
+                  }
+                />
               </div>
             </div>
-          </div>
 
-          <div className="results__metrics-container">
-            <div className="results__metrics-card-container">
-              <CardChartMyWeight
-                bodyWeight={achievableWeight}
-                currentWeight={`${weight || personalinformations?.weight}Kg`}
-                desiredWeigh={achievableWeight}
+            <div className="results__title-container">
+              <p className="results__title">Keto Life</p>
+
+              <p className="results__title">O método que está</p>
+
+              <p className="results__title">revolucionando o Mundo.</p>
+            </div>
+
+            <div className="results__content">
+              <SubmitButton
+                text="Assistir aula grátis!"
+                onClick={handleRedirect}
               />
             </div>
 
-            <div className="results__metrics-card-container">
-              <CardBodyChange />
+            <div className="results__result-resume-container">
+              <p className="results__result-resume-text">SEUS RESULTADOS</p>
+
+              <div className="results__personal-informations-container">
+                <div className="results__personal-informations">
+                  <span>{age || personalinformations?.age}</span>
+                  <p>Idade</p>
+                </div>
+
+                <div className="results__personal-informations">
+                  <span>{height || personalinformations?.height}</span>
+                  <p>Altura (CM)</p>
+                </div>
+
+                <div className="results__personal-informations">
+                  <span>{weight || personalinformations?.weight}</span>
+                  <p>Peso (Kg)</p>
+                </div>
+              </div>
             </div>
 
-            <div className="results__metrics-card-container">
-              <CardSimilarBody />
+            <div className="results__metrics-container">
+              <div className="results__metrics-card-container">
+                <CardChartMyWeight
+                  bodyWeight={achievableWeight}
+                  currentWeight={`${weight || personalinformations?.weight}Kg`}
+                  desiredWeigh={achievableWeight}
+                />
+              </div>
+
+              <div className="results__metrics-card-container">
+                <CardBodyChange />
+              </div>
+
+              <div className="results__metrics-card-container">
+                <CardSimilarBody />
+              </div>
+
+              <div className="results__metrics-card-container not-padding-x">
+                <CardCalculationImc
+                  imcValue={imcCalculation || personalinformations?.imc}
+                />
+              </div>
             </div>
 
-            <div className="results__metrics-card-container not-padding-x">
-              <CardCalculationImc
-                imcValue={imcCalculation || personalinformations?.imc}
+            <div className="results__final-submit-button">
+              <SubmitButton
+                text="Assistir aula grátis!"
+                onClick={handleRedirect}
               />
             </div>
-          </div>
 
-          <div className="results__final-submit-button">
-            <SubmitButton
-              text="Assistir aula grátis!"
-              onClick={handleRedirect}
-            />
-          </div>
+            <div className="results__card-testimonial">
+              <CardTestimonial testimonials={testimonial} />
+            </div>
 
-          <div className="results__card-testimonial">
-            <CardTestimonial testimonials={testimonial} />
-          </div>
+            <div className="results__final-submit-button">
+              <SubmitButton
+                text="Assistir aula grátis!"
+                onClick={handleRedirect}
+              />
+            </div>
 
-          <div className="results__final-submit-button">
-            <SubmitButton
-              text="Assistir aula grátis!"
-              onClick={handleRedirect}
-            />
+            <Footer />
           </div>
-
-          <Footer />
-        </div>
+        </>
       )}
     </>
   );

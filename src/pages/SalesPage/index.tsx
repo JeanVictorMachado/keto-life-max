@@ -4,10 +4,11 @@ import { Footer } from "../../components/Footer";
 import { TestimonialProps } from "../../context/ContextApi";
 import { SalesButton } from "../../components/SalesButton";
 import { TimeCounter } from "../../components/TimeCounter";
-import { SliderComponent } from "../../components/SliderComponent";
+import { SliderComponent, SliderProps } from "../../components/SliderComponent";
 import { AiFillSound } from "react-icons/ai";
 
 import testimonialScripts from "../../externalData/testimonial_1.json";
+import beforeAndAfterScripts from "../../externalData/before-and-after_1.json";
 
 import "./styles.css";
 
@@ -18,6 +19,10 @@ export const SalesPage = () => {
 
   const testimonial = useMemo(() => {
     return testimonialScripts as TestimonialProps[];
+  }, []);
+
+  const beforeAndAfter = useMemo(() => {
+    return beforeAndAfterScripts as SliderProps[];
   }, []);
 
   useEffect(() => {
@@ -78,7 +83,7 @@ export const SalesPage = () => {
 
       {showBeforeAfterImg && (
         <section className="sales-page__slider-container">
-          <SliderComponent />
+          <SliderComponent sliderParams={beforeAndAfter} />
         </section>
       )}
 

@@ -7,53 +7,23 @@ import "./styles.css";
 
 export type SliderSettings = Settings;
 
-export const SliderComponent = () => {
+export interface SliderProps {
+  img: string;
+  name: string;
+  age: string;
+  lostWeight: string;
+  description: string;
+}
+
+export interface SliderComponentProps {
+  sliderParams: SliderProps[];
+}
+
+export const SliderComponent = ({ sliderParams }: SliderComponentProps) => {
   const sliderRef = useRef<Slider>(null);
 
   const [position, setPosition] = useState(0);
-
-  const testeSlider = [
-    {
-      img: "before-and-after-1.webp",
-      description: "Imagem pessoa antes e depois",
-    },
-    {
-      img: "before-and-after-2.jpg",
-      description: "Imagem pessoa antes e depois",
-    },
-    {
-      img: "before-and-after-3.jpg",
-      description: "Imagem pessoa antes e depois",
-    },
-    {
-      img: "before-and-after-4.jpg",
-      description: "Imagem pessoa antes e depois",
-    },
-    {
-      img: "before-and-after-5.png",
-      description: "Imagem pessoa antes e depois",
-    },
-    {
-      img: "before-and-after-6.png",
-      description: "Imagem pessoa antes e depois",
-    },
-    {
-      img: "before-and-after-7.jpg",
-      description: "Imagem pessoa antes e depois",
-    },
-    {
-      img: "before-and-after-8.jpg",
-      description: "Imagem pessoa antes e depois",
-    },
-    {
-      img: "before-and-after-9.jpg",
-      description: "Imagem pessoa antes e depois",
-    },
-    {
-      img: "before-and-after-10.jpg",
-      description: "Imagem pessoa antes e depois",
-    },
-  ];
+  const [lostWeight, setLostWeight] = useState("");
 
   const settings: SliderSettings = {
     dots: true,
@@ -73,21 +43,27 @@ export const SliderComponent = () => {
 
   return (
     <div className="slider__container">
-      <p className="slider__pearson-name">Solange Alvez - 38 anos</p>
-
       <Slider ref={sliderRef} {...settings}>
-        {testeSlider.map((item) => (
-          <div className="slider__img-container">
-            <img
-              src={item.img}
-              alt={item.description}
-              className="slider__img"
-            />
-          </div>
+        {sliderParams.map((item, index) => (
+          <>
+            <div key={index}>
+              <p className="slider__pearson-name">{`${item.name} - ${item.age} anos`}</p>
+
+              <div className="slider__img-container">
+                <img
+                  src={item.img}
+                  alt={item.description}
+                  className="slider__img"
+                />
+
+                <div className="slider__quantity-weight">
+                  <span>{item.lostWeight}</span>
+                </div>
+              </div>
+            </div>
+          </>
         ))}
       </Slider>
-
-      <span className="slider__quantity-weight">-7Kg em 14 dias</span>
 
       <section className="slider__left-icon-box">
         {position !== 0 && (

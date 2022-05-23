@@ -8,11 +8,7 @@
   width: 185px;
 }
 
-.home-content {
-  max-width: 800px;
-  margin: auto;
-  padding: 1rem;
-
+.home-comtainer {
   height: 100%;
   background-image: linear-gradient(
       to bottom,
@@ -23,6 +19,12 @@
     url("../../../public/keto-diet-image-1.jpeg");
   background-size: 100%;
   background-repeat: no-repeat;
+}
+
+.home-content {
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
 }
 
 .home-content__title {

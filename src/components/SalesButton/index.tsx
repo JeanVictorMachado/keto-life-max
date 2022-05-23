@@ -2,16 +2,22 @@ import "./styles.css";
 
 interface SalesButtonProps {
   textButton: string;
+  redirectRoute: string;
 }
 
-export const SalesButton = ({ textButton }: SalesButtonProps) => {
+export const SalesButton = ({
+  textButton,
+  redirectRoute,
+}: SalesButtonProps) => {
   return (
     <div className="sales-button__container">
       <span className="sales-button__price">
         12x de R$9,90 ou à vista R$97,00
       </span>
 
-      <button className="sales-button__button">{textButton}</button>
+      <a href={redirectRoute} className="sales-button__button">
+        {textButton}
+      </a>
 
       <div className="sales-button__flags-cards-container">
         <div className="sales-button__flags-cards">

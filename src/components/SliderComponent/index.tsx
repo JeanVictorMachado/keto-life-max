@@ -59,7 +59,7 @@ export const SliderComponent = () => {
     dots: false,
     arrows: false,
     infinite: true,
-    autoplay: false,
+    autoplay: true,
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -72,6 +72,8 @@ export const SliderComponent = () => {
 
   return (
     <div className="slider__container">
+      <p className="slider__pearson-name">Solange Alvez - 38 anos</p>
+
       <Slider ref={sliderRef} {...settings}>
         {testeSlider.map((item) => (
           <div className="slider__img-container">
@@ -83,6 +85,8 @@ export const SliderComponent = () => {
           </div>
         ))}
       </Slider>
+
+      <span className="slider__quantity-weight">-7Kg em 14 dias</span>
 
       <section className="slider__left-icon-box">
         {position !== 0 && (

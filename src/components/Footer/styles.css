@@ -46,6 +46,7 @@
   width: 350px;
   font-size: 14px;
   text-align: center;
+  padding-bottom: 16px;
 }
 
 @media (min-width: 500px) {

@@ -82,6 +82,7 @@ export const SalesPage = () => {
         <section className="sales-page__sales-button-container">
           <SalesButton
             textButton="SIM!!! QUERO MUDAR DE VIDA AGORA!"
+            salesPriceText="12x de R$9,74 ou à vista R$97,00"
             redirectRoute="https://pay.kiwify.com.br/CsHq5mZ"
           />
         </section>
@@ -101,6 +102,7 @@ export const SalesPage = () => {
         <section className="sales-page__sales-button-container">
           <SalesButton
             textButton="SIM!!! QUERO MUDAR DE VIDA AGORA!"
+            salesPriceText="12x de R$9,74 ou à vista R$97,00"
             redirectRoute="https://pay.kiwify.com.br/CsHq5mZ"
           />
         </section>

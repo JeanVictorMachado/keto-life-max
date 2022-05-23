@@ -3,17 +3,19 @@ import "./styles.css";
 interface SalesButtonProps {
   textButton: string;
   redirectRoute: string;
+  salesPriceText?: string;
 }
 
 export const SalesButton = ({
   textButton,
   redirectRoute,
+  salesPriceText,
 }: SalesButtonProps) => {
   return (
     <div className="sales-button__container">
-      <span className="sales-button__price">
-        12x de R$9,90 ou à vista R$97,00
-      </span>
+      {salesPriceText && (
+        <span className="sales-button__price">{salesPriceText}</span>
+      )}
 
       <a href={redirectRoute} className="sales-button__button">
         {textButton}

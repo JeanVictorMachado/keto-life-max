@@ -153,7 +153,7 @@
 .slider__quantity-weight span {
   padding: 6px 8px;
   border-radius: 10px;
-  background: rgba(17, 17, 17, 0.705);
+  background: rgba(17, 17, 17, 0.808);
   color: #97a7ca;
 }
 
@@ -195,14 +195,14 @@
 
 .slider__left-icon-box {
   position: absolute;
-  top: 53%;
+  top: 57%;
   left: -16px;
   transform: translateY(-50%);
 }
 
 .slider__right-icon-box {
   position: absolute;
-  top: 53%;
+  top: 57%;
   right: -16px;
   transform: translateY(-50%);
 }

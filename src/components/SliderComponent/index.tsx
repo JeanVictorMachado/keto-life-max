@@ -56,7 +56,7 @@ export const SliderComponent = () => {
   ];
 
   const settings: SliderSettings = {
-    dots: false,
+    dots: true,
     arrows: false,
     infinite: true,
     autoplay: true,

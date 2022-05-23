@@ -185,14 +185,14 @@
 
 .slider__left-icon-box {
   position: absolute;
-  top: 55%;
+  top: 53%;
   left: -16px;
   transform: translateY(-50%);
 }
 
 .slider__right-icon-box {
   position: absolute;
-  top: 55%;
+  top: 53%;
   right: -16px;
   transform: translateY(-50%);
 }

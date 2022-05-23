@@ -2,6 +2,7 @@ import { Routes as HandleRoutes, Route } from "react-router-dom";
 
 import { PrivacyPolicy } from "../pages/ PrivacyPolicy";
 import { Home } from "../pages/Home";
+import { PresellPage } from "../pages/PresellPage";
 import { QuestionsOne } from "../pages/QuestionsOne";
 import { QuestionsThree } from "../pages/QuestionsThree";
 import { QuestionsTwo } from "../pages/QuestionsTwo";
@@ -19,6 +20,7 @@ export const Routes = () => {
       <Route path="/2-3" element={<QuestionsTwo />} />
       <Route path="/3-3" element={<QuestionsThree />} />
       <Route path="/results" element={<Results />} />
+      <Route path="/presell" element={<PresellPage />} />
       <Route path="/pv" element={<SalesPage />} />
     </HandleRoutes>
   );

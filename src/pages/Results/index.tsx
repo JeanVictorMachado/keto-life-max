@@ -1,4 +1,4 @@
-import { useContext, useMemo } from "react";
+import { useContext, useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Footer } from "../../components/Footer";
 import { Loading } from "../../components/Loading";
@@ -25,6 +25,8 @@ export const Results = () => {
   const navigate = useNavigate();
 
   const { age, height, weight, imcCalculation } = useContext(ContextAPI);
+
+  const [isLoading, setIsLoading] = useState(true);
 
   const gender = useMemo(() => {
     return localStorage.getItem("@ketolife__gender:");
@@ -73,10 +75,16 @@ export const Results = () => {
     navigate("/pv");
   };
 
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 6000);
+  }, []);
+
   return (
     <>
-      {false ? (
-        <Loading />
+      {isLoading ? (
+        <Loading isProcessing />
       ) : (
         <div className="results__comtainer">
           <div className="results__header-container">

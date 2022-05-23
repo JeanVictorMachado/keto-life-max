@@ -195,14 +195,14 @@
 
 .slider__left-icon-box {
   position: absolute;
-  top: 57%;
+  top: 58%;
   left: -16px;
   transform: translateY(-50%);
 }
 
 .slider__right-icon-box {
   position: absolute;
-  top: 57%;
+  top: 58%;
   right: -16px;
   transform: translateY(-50%);
 }

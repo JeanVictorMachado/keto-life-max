@@ -44,7 +44,7 @@ export const Home = () => {
 
   return (
     <>
-      {showLoading ? (
+      {true ? (
         <Loading />
       ) : (
         <div className="home-comtainer">

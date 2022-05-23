@@ -124,3 +124,18 @@
   letter-spacing: 12px;
   color: #fff;
 }
+
+.loading__processing-porcent {
+  font-size: 30px;
+  color: #97a7ca;
+  text-align: center;
+  margin-top: -60px;
+}
+
+.loading__processing-text {
+  font-size: 20px !important;
+  font-family: sans-serif !important;
+  color: #97a7ca !important;
+  position: absolute;
+  left: -35px;
+}

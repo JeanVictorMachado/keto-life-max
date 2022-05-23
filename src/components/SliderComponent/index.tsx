@@ -61,6 +61,7 @@ export const SliderComponent = () => {
     infinite: true,
     autoplay: true,
     speed: 300,
+    pauseOnFocus: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     afterChange: setPosition,

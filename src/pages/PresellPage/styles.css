@@ -17,9 +17,16 @@
   width: 100px;
 }
 
+@media (max-width: 500px) {
+  .presell__green-check-img {
+    width: 80px;
+  }
+}
+
 .presell__attention-text {
   font-size: 30px;
   color: #e6e6e6;
+  margin-top: 16px;
   margin-bottom: 32px;
 }
 

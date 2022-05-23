@@ -38,7 +38,13 @@
 @media (max-width: 460px) {
   .sales-button__button {
     font-size: 20px;
-    padding: 0 48px;
+    padding: 0 55px;
+  }
+}
+
+@media (max-width: 460px) {
+  .sales-button__button {
+    padding: 0 40px;
   }
 }
 

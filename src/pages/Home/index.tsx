@@ -3,8 +3,8 @@ import { BookIcon } from "../../components/BookIcon";
 import { ButtonsGender } from "../../components/ButtonsGender";
 import { CardTestimonial } from "../../components/CardTestimonial";
 import { Footer } from "../../components/Footer";
-import { Header } from "../../components/Header";
 import { Loading } from "../../components/Loading";
+import { LogoKetoPro } from "../../components/LogoKetoPro";
 import { PerfilIcon } from "../../components/PerfilIcon";
 import { ToastCookies } from "../../components/ToastCookies";
 import ContextAPI, { TestimonialProps } from "../../context/ContextApi";
@@ -48,9 +48,13 @@ export const Home = () => {
         <Loading />
       ) : (
         <div className="home-comtainer">
-          <Header image="keto-diet-image-1.jpeg" />
+          <div className="home__header-box" />
 
           <div className="home-content">
+            <div className="home__logo-container">
+              <LogoKetoPro />
+            </div>
+
             <p className="home-content__title">
               Você sabia que é possível emagrecer muito mesmo podendo comer de
               tudo?

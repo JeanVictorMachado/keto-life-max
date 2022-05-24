@@ -1,5 +1,4 @@
 import { useEffect, useMemo, useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { CardTestimonial } from "../../components/CardTestimonial";
 import { Footer } from "../../components/Footer";
 import { TestimonialProps } from "../../context/ContextApi";
@@ -14,8 +13,6 @@ import beforeAndAfterScripts from "../../externalData/before-and-after_1.json";
 import "./styles.css";
 
 export const SalesPage = () => {
-  const navigate = useNavigate();
-
   const [showTimeCounter, setShowTimeCounter] = useState(false);
   const [showSalesButton, setShowSalesButton] = useState(false);
   const [showBeforeAfterImg, setShowBeforeAfterImg] = useState(false);

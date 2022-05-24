@@ -23,7 +23,6 @@ export const SliderComponent = ({ sliderParams }: SliderComponentProps) => {
   const sliderRef = useRef<Slider>(null);
 
   const [position, setPosition] = useState(0);
-  const [lostWeight, setLostWeight] = useState("");
 
   const settings: SliderSettings = {
     dots: true,

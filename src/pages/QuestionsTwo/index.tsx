@@ -43,7 +43,7 @@ export const QuestionsTwo = () => {
       }}
     >
       <Header
-        image="./life-style-family.png"
+        image="./images/life-style-family.png"
         icon={<GreenCircle svg={<FaRunning fontSize={30} />} />}
       />
 

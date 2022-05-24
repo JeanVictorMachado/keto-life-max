@@ -177,7 +177,7 @@ export const QuestionsThree = () => {
       }}
     >
       <Header
-        image="./calculate-infos.jpeg"
+        image="./images/calculate-infos.jpeg"
         icon={<GreenCircle svg={<FaCalculator fontSize={30} />} />}
       />
 

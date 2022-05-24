@@ -27,8 +27,8 @@ export const Testimonial = ({
           </div>
 
           <div className="testimonial__like">
-            <img src="facebook-like.png" alt="Imagem" />
-            <img src="facebook-love.png" alt="Imagem" />
+            <img src="images/facebook-like.png" alt="Imagem" />
+            <img src="images/facebook-love.png" alt="Imagem" />
             <span>{likes}</span>
           </div>
         </div>
@@ -57,8 +57,8 @@ export const Testimonial = ({
                   </div>
 
                   <div className="testimonial-response__like">
-                    <img src="facebook-like.png" alt="Imagem" />
-                    <img src="facebook-love.png" alt="Imagem" />
+                    <img src="images/facebook-like.png" alt="Imagem" />
+                    <img src="images/facebook-love.png" alt="Imagem" />
                     <span>{item.likes}</span>
                   </div>
                 </div>

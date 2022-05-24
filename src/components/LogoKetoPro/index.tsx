@@ -5,7 +5,7 @@ export const LogoKetoPro = () => {
     <div className="header__container-logo">
       <img
         className="header__logo"
-        src="logo-keto-pro.svg"
+        src="images/logo-keto-pro.svg"
         alt="Logotipo Keto Life"
       />
 

@@ -24,7 +24,7 @@ export const SalesButton = ({
       <div className="sales-button__flags-cards-container">
         <div className="sales-button__flags-cards">
           <img
-            src="mastercard-logo.png"
+            src="images/mastercard-logo.png"
             alt="Logo master card"
             style={{
               width: "95%",
@@ -34,7 +34,7 @@ export const SalesButton = ({
         </div>
         <div className="sales-button__flags-cards">
           <img
-            src="visa-logo.png"
+            src="images/visa-logo.png"
             alt="Logo Visa card"
             style={{
               width: "100%",
@@ -44,7 +44,7 @@ export const SalesButton = ({
         </div>
         <div className="sales-button__flags-cards">
           <img
-            src="elo-logo.png"
+            src="images/elo-logo.png"
             alt="Logo Elo card"
             style={{
               width: "100%",
@@ -54,7 +54,7 @@ export const SalesButton = ({
         </div>
         <div className="sales-button__flags-cards">
           <img
-            src="diners-logo.png"
+            src="images/diners-logo.png"
             alt="Logo Diners card"
             style={{
               width: "80%",
@@ -64,7 +64,7 @@ export const SalesButton = ({
         </div>
         <div className="sales-button__flags-cards">
           <img
-            src="hipercard-logo.png"
+            src="images/hipercard-logo.png"
             alt="Logo Hipercard card"
             style={{
               width: "90%",
@@ -74,7 +74,7 @@ export const SalesButton = ({
         </div>
         <div className="sales-button__flags-cards">
           <img
-            src="pix-logo.png"
+            src="images/pix-logo.png"
             alt="Logo Pix card"
             style={{
               width: "95%",
@@ -84,7 +84,7 @@ export const SalesButton = ({
         </div>
         <div className="sales-button__flags-cards">
           <img
-            src="boleto-logo.png"
+            src="images/boleto-logo.png"
             alt="Logo Boleto card"
             style={{
               width: "90%",
@@ -96,7 +96,7 @@ export const SalesButton = ({
 
       <div className="sales-button__security-page">
         <img
-          src="checkout-image.webp"
+          src="images/checkout-image.webp"
           alt="Imagem  de segurança da página"
           style={{
             width: "100%",

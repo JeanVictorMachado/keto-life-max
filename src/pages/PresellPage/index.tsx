@@ -13,7 +13,7 @@ export const PresellPage = () => {
 
       <div className="presell__content">
         <img
-          src="green-check.png"
+          src="images/green-check.png"
           alt="Green check logo"
           className="presell__green-check-img"
         />
@@ -35,7 +35,7 @@ export const PresellPage = () => {
         />
 
         <img
-          src="security-site.png"
+          src="images/security-site.png"
           alt="Security site logo"
           className="presell__security-site-img"
         />

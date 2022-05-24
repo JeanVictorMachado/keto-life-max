@@ -6,8 +6,8 @@ on:
       - main
 
 jobs:
-  web-deploy:
-    name: 🎉 Deploy
+  build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - name: 🚚 Get latest code
@@ -23,7 +23,27 @@ jobs:
           npm install
           npm run build
 
-      - name: 📂 Sync files
+      - name: Archive prodution artifact
+        uses: actions/upload-artifact@main
+        with:
+          name: dist
+          path: dist
+  
+  deploy:
+    name: Deploy 🎉 
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@main
+
+      - name: Download artifact
+        uses: actions/download-artifact@main
+        with:
+          name: dist
+          path: dist
+
+       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
           server: ${{ secrets.ftp_host }}

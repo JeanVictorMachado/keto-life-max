@@ -1,32 +1,32 @@
-name: 🚀 Deploy Keto life pro
+# name: 🚀 Deploy Keto life pro
 
-on:
-  push:
-    branches:
-      - main
+# on:
+#   push:
+#     branches:
+#       - main
 
-jobs:
-  web-deploy:
-    name: 🎉 Deploy
-    runs-on: ubuntu-latest
-    steps:
-      - name: 🚚 Get latest code
-        uses: actions/checkout@v2
+# jobs:
+#   web-deploy:
+#     name: 🎉 Deploy
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: 🚚 Get latest code
+#         uses: actions/checkout@v2
 
-      - name: Use Node.js 14
-        uses: actions/setup-node@v2
-        with:
-          node-version: "14"
+#       - name: Use Node.js 14
+#         uses: actions/setup-node@v2
+#         with:
+#           node-version: "14"
 
-      - name: 🔨 Build Project
-        run: |
-          npm install
-          npm run build
+#       - name: 🔨 Build Project
+#         run: |
+#           npm install
+#           npm run build
 
-      - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
-        with:
-          server: ${{ secrets.ftp_host }}
-          username: ${{ secrets.ftp_user }}
-          password: ${{ secrets.ftp_password }}
-          server-dir: ketolifepro.arquiteturadatecnologia.com/
+#       - name: 📂 Sync files
+#         uses: SamKirkland/FTP-Deploy-Action@4.3.0
+#         with:
+#           server: ${{ secrets.ftp_host }}
+#           username: ${{ secrets.ftp_user }}
+#           password: ${{ secrets.ftp_password }}
+#           server-dir: ketolifepro.arquiteturadatecnologia.com/

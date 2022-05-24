@@ -13,7 +13,6 @@ import { TermsOfUse } from "../pages/TermsOfUse";
 export const Routes = () => {
   return (
     <HandleRoutes>
-      <Route path="/" element={<Home />} />
       <Route path="/politica-de-privacidade" element={<PrivacyPolicy />} />
       <Route path="/termos-de-uso" element={<TermsOfUse />} />
       <Route path="/1-3" element={<QuestionsOne />} />
@@ -22,6 +21,7 @@ export const Routes = () => {
       <Route path="/results" element={<Results />} />
       <Route path="/presell" element={<PresellPage />} />
       <Route path="/pv" element={<SalesPage />} />
+      <Route path="/" element={<Home />} />
     </HandleRoutes>
   );
 };

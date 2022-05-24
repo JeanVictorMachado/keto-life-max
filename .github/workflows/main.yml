@@ -6,47 +6,48 @@ on:
       - main
 
 jobs:
-  build:
-    name: Build
-    runs-on: ubuntu-latest
-    steps:
-      - name: 🚚 Get latest code
-        uses: actions/checkout@v2
+  web-deploy:
+    build:
+      name: Build
+      runs-on: ubuntu-latest
+      steps:
+        - name: 🚚 Get latest code
+          uses: actions/checkout@v2
 
-      - name: Use Node.js 14
-        uses: actions/setup-node@v2
-        with:
-          node-version: "14"
+        - name: Use Node.js 14
+          uses: actions/setup-node@v2
+          with:
+            node-version: "14"
 
-      - name: 🔨 Build Project
-        run: |
-          npm install
-          npm run build
+        - name: 🔨 Build Project
+          run: |
+            npm install
+            npm run build
 
-      - name: Archive prodution artifact
-        uses: actions/upload-artifact@main
-        with:
-          name: dist
-          path: dist
-  
-  deploy:
-    name: Deploy 🎉 
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@main
+        - name: Archive prodution artifact
+          uses: actions/upload-artifact@main
+          with:
+            name: dist
+            path: dist
 
-      - name: Download artifact
-        uses: actions/download-artifact@main
-        with:
-          name: dist
-          path: dist
+    deploy:
+      name: Deploy 🎉
+      needs: build
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout repository
+          uses: actions/checkout@main
 
-       - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
-        with:
-          server: ${{ secrets.ftp_host }}
-          username: ${{ secrets.ftp_user }}
-          password: ${{ secrets.ftp_password }}
-          server-dir: ketolifepro.arquiteturadatecnologia.com/
+        - name: Download artifact
+          uses: actions/download-artifact@main
+          with:
+            name: dist
+            path: dist
+
+        - name: 📂 Sync files
+          uses: SamKirkland/FTP-Deploy-Action@4.3.0
+          with:
+            server: ${{ secrets.ftp_host }}
+            username: ${{ secrets.ftp_user }}
+            password: ${{ secrets.ftp_password }}
+            server-dir: ketolifepro.arquiteturadatecnologia.com/

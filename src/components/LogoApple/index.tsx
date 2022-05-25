@@ -12,7 +12,7 @@ export const LogoApple = ({
   color = "#f432a6",
 }: LogoAppleprops) => {
   return (
-    <>
+    <div className="apple__container">
       <svg
         version="1.0"
         xmlns="http://www.w3.org/2000/svg"
@@ -91,6 +91,6 @@ export const LogoApple = ({
           />
         </g>
       </svg>
-    </>
+    </div>
   );
 };

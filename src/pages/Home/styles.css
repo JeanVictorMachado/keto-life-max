@@ -12,9 +12,9 @@
   height: 100%;
   background-image: linear-gradient(
       to bottom,
-      transparent -8%,
-      #29293e 5%,
-      rgb(20, 20, 48)
+      transparent -5%,
+      #293e55 5%,
+      rgb(20, 20, 48) 35%
     ),
     url("../../../public/images/keto-diet-image-1.jpeg");
   background-size: 100%;

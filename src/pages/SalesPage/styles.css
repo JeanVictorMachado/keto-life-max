@@ -1,6 +1,14 @@
 .sales-page__container {
   width: 100%;
   min-height: 500px;
+
+  background-image: linear-gradient(
+    to bottom,
+    transparent -5%,
+    #293e55 5%,
+    rgb(20, 20, 48) 35%
+  );
+  background-size: 100%;
 }
 
 .sales-page__header-color {

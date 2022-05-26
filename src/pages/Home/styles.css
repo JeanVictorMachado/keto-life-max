@@ -99,7 +99,7 @@
 .home-content__button-start-now-container {
   width: 100%;
   margin-top: 48px;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 
   display: flex;
   justify-content: center;
@@ -144,5 +144,5 @@
 }
 
 .home-content__testimonial-container {
-  padding-top: 16px !important;
+  padding-top: 24px !important;
 }

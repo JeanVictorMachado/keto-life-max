@@ -35,8 +35,9 @@ export const Loading = ({
             <div className="logo">
               <LogoApple />
 
-              <p className="logo-text">
-                Keto <p className="logo-text-pro">Life</p>
+              <p className="logo__text">
+                Keto <p className="logo__text-life">Life</p>
+                <p className="logo__text-max">MAX</p>
               </p>
             </div>
           )

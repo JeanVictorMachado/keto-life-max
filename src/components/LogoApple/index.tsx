@@ -9,7 +9,7 @@ interface LogoAppleprops {
 export const LogoApple = ({
   width = "80px",
   height = "80px",
-  color = "#f432a6",
+  color = "#f53374",
 }: LogoAppleprops) => {
   return (
     <div className="apple__container">
@@ -20,9 +20,6 @@ export const LogoApple = ({
         height={height}
         viewBox="0 0 1210.000000 1280.000000"
         preserveAspectRatio="xMidYMid meet"
-        style={{
-          color: "red",
-        }}
       >
         <g
           transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"

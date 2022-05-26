@@ -112,7 +112,7 @@ export const Results = () => {
             </div>
 
             <div className="results__title-container">
-              <p className="results__title">Keto Life</p>
+              <p className="results__title">Keto Life MAX</p>
 
               <p className="results__title">O método que está</p>
 
@@ -122,6 +122,8 @@ export const Results = () => {
             <div className="results__content">
               <SubmitButton
                 text="Assistir aula grátis!"
+                fontSize="26px"
+                fontWeight="600"
                 onClick={handleRedirect}
               />
             </div>
@@ -174,6 +176,8 @@ export const Results = () => {
             <div className="results__final-submit-button">
               <SubmitButton
                 text="Assistir aula grátis!"
+                fontSize="26px"
+                fontWeight="600"
                 onClick={handleRedirect}
               />
             </div>
@@ -185,6 +189,8 @@ export const Results = () => {
             <div className="results__final-submit-button">
               <SubmitButton
                 text="Assistir aula grátis!"
+                fontSize="26px"
+                fontWeight="600"
                 onClick={handleRedirect}
               />
             </div>

@@ -18,7 +18,7 @@ export const SubmitButton = ({
   disabled = false,
   marginBottom,
   fontWeight,
-  fontSize,
+  fontSize = "24px",
   onClick,
 }: SubmitButtonProps) => {
   return (

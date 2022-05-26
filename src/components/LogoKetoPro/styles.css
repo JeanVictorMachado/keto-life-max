@@ -1,8 +1,8 @@
 .header__container-logo {
   width: min-content;
-  background-image: linear-gradient(45deg, #f5337486, #c051e888, #5172e885);
+  background-image: linear-gradient(45deg, #f53374a1, #c051e8a4, #5172e8a2);
   border-radius: 10px;
-  padding: 4px 12px 10px 12px;
+  padding: 8px 14px 12px 18px;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.523);
 
   display: flex;
@@ -17,15 +17,15 @@
   background: none;
 
   position: absolute;
-  right: -8px;
-  top: -4px;
+  right: -6px;
+  top: 0px;
 
   transform: rotate(-15deg);
 }
 
 .header-title {
   color: #ececec;
-  font-size: 24px;
+  font-size: 28px;
   background: none;
   text-shadow: 0 0 5px black;
 
@@ -42,8 +42,10 @@
 }
 
 .header-title-max {
-  margin-bottom: -3px;
+  margin-bottom: -2.5px;
   margin-left: 5px;
+  font-size: 27px;
+  font-weight: 600;
   color: #f53374;
   display: flex;
   align-items: center;

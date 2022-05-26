@@ -122,7 +122,7 @@ export const Home = () => {
                   href="#home-content__call-method"
                   className="home-content__button-start-now"
                 >
-                  Comece Agora
+                  Comece Agora!
                 </a>
               </div>
 
@@ -135,7 +135,7 @@ export const Home = () => {
                   href="#home-content__call-method"
                   className="home-content__button-start-now"
                 >
-                  Comece Agora
+                  Comece Agora!
                 </a>
               </div>
             </div>

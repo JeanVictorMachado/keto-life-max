@@ -9,12 +9,9 @@
   box-shadow: 0 5px 20px 0 rgb(76 5 45 / 60%);
 
   color: rgb(240, 240, 240);
-  font-size: 24px;
   text-shadow: 0 0 2px #363636;
   cursor: pointer;
-}
 
-.submit-button__container {
   animation: animationButonSubmit 1s ease infinite;
 }
 

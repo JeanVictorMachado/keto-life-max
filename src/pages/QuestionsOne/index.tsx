@@ -43,7 +43,7 @@ export const QuestionsOne = () => {
       }}
     >
       <Header
-        image="./images/olive-oil-keto-friendly.jpeg"
+        image="./images/image-all-diet-2.jpg"
         icon={<GreenCircle svg={<MdOutlineFastfood fontSize={30} />} />}
       />
 

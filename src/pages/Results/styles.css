@@ -12,6 +12,7 @@
 }
 
 .results__header-container {
+  padding-top: 16px;
   display: flex;
   justify-content: space-between;
 }

@@ -48,7 +48,7 @@ export const SalesPage = () => {
       <div className="sales-page__title-container-2">
         <p>
           <strong>Conheça o método</strong> que está sendo mais utilizado no
-          mundo em emagrecimento e descubra porque você nunca{" "}
+          mundo em emagrecimento e descubra por que você nunca{" "}
           <strong>emagrece de forma definitiva</strong>
         </p>
       </div>

@@ -119,15 +119,6 @@ export const Results = () => {
               <p className="results__title">revolucionando o Mundo.</p>
             </div>
 
-            <div className="results__content">
-              <SubmitButton
-                text="Assistir aula grátis!"
-                fontSize="26px"
-                fontWeight="600"
-                onClick={handleRedirect}
-              />
-            </div>
-
             <div className="results__result-resume-container">
               <p className="results__result-resume-text">SEUS RESULTADOS</p>
 
@@ -174,8 +165,13 @@ export const Results = () => {
             </div>
 
             <div className="results__final-submit-button">
+              <p className="results__title-final-submit-button">
+                Descubra como alcançar esse resultado através de uma aula
+                gratuita
+              </p>
+
               <SubmitButton
-                text="Assistir aula grátis!"
+                text="Assistir agora!"
                 fontSize="26px"
                 fontWeight="600"
                 onClick={handleRedirect}
@@ -187,8 +183,13 @@ export const Results = () => {
             </div>
 
             <div className="results__final-submit-button">
+              <p className="results__title-final-submit-button">
+                Descubra como alcançar esse resultado através de uma aula
+                gratuita
+              </p>
+
               <SubmitButton
-                text="Assistir aula grátis!"
+                text="Assistir agora!"
                 fontSize="26px"
                 fontWeight="600"
                 onClick={handleRedirect}

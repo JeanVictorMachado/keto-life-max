@@ -1,10 +1,12 @@
 import { useContext } from "react";
-import { MdOutlineFastfood } from "react-icons/md";
+
 import { FooterQuestions } from "../../components/FooterQuestions";
 import { GreenCircle } from "../../components/GreenCircle";
 import { Header } from "../../components/Header";
 import { QuestionButton } from "../../components/QuestionButton";
 import ContextAPI from "../../context/ContextApi";
+
+import { MdOutlineFastfood } from "react-icons/md";
 
 import "./styles.css";
 
@@ -47,13 +49,15 @@ export const QuestionsOne = () => {
         icon={<GreenCircle svg={<MdOutlineFastfood fontSize={30} />} />}
       />
 
-      <p className="questions-one__title">Qual seu tipo de comida preferida?</p>
+      <p className="questions-one__title">
+        Como geralmente são suas refeições diárias?
+      </p>
 
       <div className="questions-one__buttons-container">
         <div className="questions-one__button">
           <QuestionButton
             link="/2-3"
-            text="sds"
+            text="Sempre como legumes verduras e proteínas"
             onClick={() => handleClick("1")}
           />
         </div>
@@ -61,7 +65,7 @@ export const QuestionsOne = () => {
         <div className="questions-one__button">
           <QuestionButton
             link="/2-3"
-            text="cseucbeucbeucbeucsssssssssssss"
+            text="O básico: Arroz, feijão e carne"
             onClick={() => handleClick("2")}
           />
         </div>
@@ -69,7 +73,7 @@ export const QuestionsOne = () => {
         <div className="questions-one__button">
           <QuestionButton
             link="/2-3"
-            text="sds"
+            text="Como muito fast food e comidas congeladas"
             onClick={() => handleClick("3")}
           />
         </div>
@@ -77,7 +81,7 @@ export const QuestionsOne = () => {
         <div className="questions-one__button">
           <QuestionButton
             link="/2-3"
-            text="sds"
+            text="Geralmente faço apenas uma refeição diária"
             onClick={() => handleClick("4")}
           />
         </div>

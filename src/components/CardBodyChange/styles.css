@@ -5,6 +5,11 @@
   align-items: center;
 }
 
+.results__title-text {
+  width: 100%;
+  text-align: left;
+}
+
 .results__svg-container {
   width: 100%;
   padding-left: 16px;

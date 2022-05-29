@@ -1,4 +1,5 @@
 import { useContext, useEffect, useMemo, useState } from "react";
+
 import { BookIcon } from "../../components/BookIcon";
 import { ButtonsGender } from "../../components/ButtonsGender";
 import { CardTestimonial } from "../../components/CardTestimonial";
@@ -57,36 +58,41 @@ export const Home = () => {
               </div>
 
               <p className="home-content__title">
-                Você sabia que é possível emagrecer muito mesmo podendo comer de
-                tudo?
+                Você sabia que é possível emagrecer podendo comer de tudo?
               </p>
 
               <p
                 id="home-content__call-method"
                 className="home-content__call-method"
               >
-                Descubra quanto peso você podera perder aplicando esse metodo:
+                Descubra quantos quilos você poderá perder aplicando esse
+                metodo:
               </p>
 
               <ol id="home-content__ol" className="home-content__ol">
-                <li className="home-content__li">Selecione o seu gênero</li>
                 <li className="home-content__li">
-                  Escolha os seus alimentos preferidos
+                  Selecione o seu gênero em um dos circulos abaixo (Masculino ou
+                  Feminino)
+                </li>
+                <li className="home-content__li">
+                  Escolha seus alimentos preferidos
                 </li>
                 <li className="home-content__li">
                   Defina o seu estilo de vida
                 </li>
-                <li className="home-content__li">Insira as suas medidas</li>
                 <li className="home-content__li">
-                  Veja o passo a passo pra você atingir seu resultado
+                  Insira sua altura, peso atual e peso desejado
+                </li>
+                <li className="home-content__li">
+                  E descubra o passo a passo pra você atingir seu resultado
                 </li>
               </ol>
 
               <ButtonsGender id="button-gender" />
 
               <p className="home-content__objetive-text">
-                Você será capaz de atingir todos seus objetivos com o metodo
-                Keto PRO
+                Você será capaz de atingir o seu objetivo com o metodo Keto life
+                MAX
               </p>
 
               <div className="home-content__perfil-icon">
@@ -97,10 +103,9 @@ export const Home = () => {
                 </p>
 
                 <p className="home-content__perfil-text">
-                  Imediatamente após preencher as suas informações no
-                  questionário, verá o seu Índice de Massa Corporal (IMC)
-                  pessoal e idade metabólica. Obtenha também recomendações sobre
-                  a ingestão diária de calorias e água. Tudo isso de graça.
+                  Imediatamente, após preencher as suas informações no
+                  questionário, você descubrirá o seu Índice de Massa Corporal
+                  (IMC) gratuitamente.
                 </p>
               </div>
 
@@ -110,10 +115,10 @@ export const Home = () => {
                 <p className="home-content__perfil-title">Aula grátis</p>
 
                 <p className="home-content__perfil-text">
-                  Veja uma vídeo aula grátis criada por um nutricionista
-                  experiente e pós graduado em emagrecimento de forma saudável,
-                  entenda tudo como funciona o metodo Keto Life e o por que ele
-                  é tudo eficaz na perda de peso.
+                  Veja uma vídeo aula criada por um nutricionista experiente e
+                  pós graduado em emagrecimento de forma saudável. Entenda como
+                  funciona o metodo Keto Life MAX e o porquê ele é o mais eficaz
+                  na perda de peso.
                 </p>
               </div>
 

@@ -59,7 +59,7 @@
 .results__result-resume-container {
   width: 100%;
   max-width: 500px;
-  padding: 32px 16px 16px 16px;
+  padding: 16px 16px 16px 16px;
   margin: auto;
 }
 
@@ -127,10 +127,20 @@
 
 .results__final-submit-button {
   width: 100%;
+  max-width: 500px;
   padding: 32px 16px 48px 16px;
+  margin: auto;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
+}
+
+.results__title-final-submit-button {
+  font-size: 22px;
+  color: rgb(240, 240, 240);
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .results__card-testimonial {

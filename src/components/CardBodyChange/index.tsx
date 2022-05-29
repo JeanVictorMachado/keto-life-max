@@ -11,7 +11,7 @@ export const CardBodyChange = () => {
 
   return (
     <div className="results__svg-card-container">
-      <h2>Estimativa de mudança corporal</h2>
+      <h2 className="results__title-text">Minhas medidas</h2>
 
       <div className="results__svg-container">
         <div className="results__svg-personal">
@@ -20,29 +20,30 @@ export const CardBodyChange = () => {
 
         <div className="results__infos-personal">
           <span>
-            7%<p>Pescoço</p>
+            -7%<p>Pescoço</p>
           </span>
 
           <span>
-            12%<p>Braços</p>
+            -12%<p>Braços</p>
           </span>
 
           <span>
-            42%<p>Cintura</p>
+            -42%<p>Cintura</p>
           </span>
 
           <span>
-            23%<p>Lados</p>
+            -23%<p>Lados</p>
           </span>
 
           <span>
-            16%<p>Coxas</p>
+            -16%<p>Coxas</p>
           </span>
         </div>
       </div>
 
       <span className="results__text-botton">
-        Com base no sucesso de outros usuários com o mesmo tipo metabólico
+        Resultado com base no sucesso de outros usuários com o mesmo tipo
+        metabólico
       </span>
     </div>
   );

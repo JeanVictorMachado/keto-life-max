@@ -55,7 +55,7 @@ export const QuestionsTwo = () => {
         <div className="questions-one__button">
           <QuestionButton
             link="/3-3"
-            text="sds"
+            text="Pratico atividades físicas regularmente"
             onClick={() => handleClick("1")}
           />
         </div>
@@ -63,7 +63,7 @@ export const QuestionsTwo = () => {
         <div className="questions-one__button">
           <QuestionButton
             link="/3-3"
-            text="cseucbeucbeucbeucsssssssssssss"
+            text="Às vezes pratico atividades físicas"
             onClick={() => handleClick("2")}
           />
         </div>
@@ -71,7 +71,7 @@ export const QuestionsTwo = () => {
         <div className="questions-one__button">
           <QuestionButton
             link="/3-3"
-            text="sds"
+            text="Não pratico atividades físicas mas faço esforço no trabalho"
             onClick={() => handleClick("3")}
           />
         </div>
@@ -79,7 +79,7 @@ export const QuestionsTwo = () => {
         <div className="questions-one__button">
           <QuestionButton
             link="/3-3"
-            text="sds"
+            text="Não pratico atividades físicas e trabalho sentado"
             onClick={() => handleClick("4")}
           />
         </div>

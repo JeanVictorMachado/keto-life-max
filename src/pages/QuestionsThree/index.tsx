@@ -50,7 +50,7 @@ export const QuestionsThree = () => {
     desiredWeight,
   }: InputValuesProps) => {
     const imc = String(
-      ((Number(weight) / (Number(height) * 2)) * 100).toFixed(1)
+      (Number(weight) / ((Number(height) * Number(height)) / 10000)).toFixed(1)
     );
 
     const personalInformations = JSON.parse(

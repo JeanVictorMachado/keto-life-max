@@ -35,20 +35,22 @@ export const TimeCounter = ({ hourQuantity }: TimeCounterProps) => {
     const hour = hourQuantity?.split("");
 
     if (hour && hour.length > 1) {
-      return Number(hour[0]);
+      return Number(hour[0]) - 1;
     }
 
     return 0;
   });
+
   const [hourRight, setHourRight] = useState(() => {
     const hour = hourQuantity?.split("");
 
     if (hour && hour.length > 1) {
-      return Number(hour[1]);
+      return Number(hour[1]) - 1;
     }
 
-    return hour ? Number(hour[0]) : 0;
+    return hour ? Number(hour[0]) - 1 : 0;
   });
+
   const [minleft, setMinLeft] = useState(5);
   const [minRight, setMinRight] = useState(9);
   const [secondleft, setSecondLeft] = useState(5);
@@ -78,12 +80,12 @@ export const TimeCounter = ({ hourQuantity }: TimeCounterProps) => {
     }
 
     if (hourRight === 0) {
-      setHourRight(4);
+      setHourRight(0);
       setHourLeft(hourleft - 1);
     }
 
     if (hourleft === 0 && hourRight === 0) {
-      setHourLeft(2);
+      setHourLeft(0);
     }
   };
 

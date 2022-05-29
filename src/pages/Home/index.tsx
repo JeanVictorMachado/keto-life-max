@@ -10,12 +10,16 @@ import { PerfilIcon } from "../../components/PerfilIcon";
 import { ToastCookies } from "../../components/ToastCookies";
 import ContextAPI, { TestimonialProps } from "../../context/ContextApi";
 
+import { FaArrowAltCircleDown } from "react-icons/fa";
+import { GrFormClose } from "react-icons/gr";
+
 import testimonialScripts from "../../externalData/testimonial_1.json";
 
 import "./styles.css";
 
 export const Home = () => {
   const [toastCookies, setToastCookies] = useState(false);
+  const [genderModal, setGenderModal] = useState(false);
 
   const { showLoading, showToastCookies, setShowLoading, setShowToastCookies } =
     useContext(ContextAPI);
@@ -71,8 +75,8 @@ export const Home = () => {
 
               <ol id="home-content__ol" className="home-content__ol">
                 <li className="home-content__li">
-                  Selecione o seu gênero em um dos circulos abaixo (Masculino ou
-                  Feminino)
+                  Selecione o seu gênero em um dos circulos abaixo (Feminino ou
+                  Masculino)
                 </li>
                 <li className="home-content__li">
                   Escolha seus alimentos preferidos
@@ -88,7 +92,24 @@ export const Home = () => {
                 </li>
               </ol>
 
-              <ButtonsGender id="button-gender" />
+              <div className="home-content__button-gender-container">
+                <ButtonsGender id="button-gender" />
+
+                {genderModal && (
+                  <div className="home-content__gender-modal">
+                    <span>Primeiro selecione seu genero</span>
+
+                    <FaArrowAltCircleDown size={30} color="#DCDCDC" />
+
+                    <div
+                      className="home-content__gender-close-modal"
+                      onClick={() => setGenderModal(false)}
+                    >
+                      <GrFormClose size={20} />
+                    </div>
+                  </div>
+                )}
+              </div>
 
               <p className="home-content__objetive-text">
                 Você será capaz de atingir o seu objetivo com o metodo Keto life
@@ -122,7 +143,10 @@ export const Home = () => {
                 </p>
               </div>
 
-              <div className="home-content__button-start-now-container">
+              <div
+                className="home-content__button-start-now-container"
+                onClick={() => setGenderModal(true)}
+              >
                 <a
                   href="#home-content__call-method"
                   className="home-content__button-start-now"
@@ -135,7 +159,10 @@ export const Home = () => {
                 <CardTestimonial testimonials={testimonial} />
               </section>
 
-              <div className="home-content__button-start-now-container">
+              <div
+                className="home-content__button-start-now-container"
+                onClick={() => setGenderModal(true)}
+              >
                 <a
                   href="#home-content__call-method"
                   className="home-content__button-start-now"

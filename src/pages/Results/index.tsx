@@ -166,7 +166,7 @@ export const Results = () => {
 
             <div className="results__final-submit-button">
               <p className="results__title-final-submit-button">
-                Descubra como alcançar esse resultado através de uma aula
+                Descubra como alcançar esse resultado através de uma super aula
                 gratuita
               </p>
 
@@ -184,7 +184,7 @@ export const Results = () => {
 
             <div className="results__final-submit-button">
               <p className="results__title-final-submit-button">
-                Descubra como alcançar esse resultado através de uma aula
+                Descubra como alcançar esse resultado através de uma super aula
                 gratuita
               </p>
 

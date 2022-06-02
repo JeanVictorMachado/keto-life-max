@@ -3,7 +3,7 @@
   background-image: linear-gradient(
       to bottom,
       transparent -3%,
-      #293e55 5%,
+      #293e55 4%,
       rgb(20, 20, 48) 35%
     ),
     url("../../../public/images/image-all-diet.jpg");
@@ -31,6 +31,10 @@
 .results__title-container {
   margin-top: -30px;
   padding: 16px;
+  background: linear-gradient(89.97deg, #f53373 1.84%, #bf51e8 50.67%, #5172e8);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
   display: flex;
   flex-direction: column;
@@ -42,10 +46,9 @@
   width: 100%;
   max-width: 500px;
   margin: auto;
-  color: rgb(206, 206, 206);
   font-size: 30px;
+  font-weight: 600;
   text-align: left;
-  text-shadow: 0 0 5px #000000;
 }
 
 .results__content {

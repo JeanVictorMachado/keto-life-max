@@ -1,11 +1,7 @@
 .presell__container {
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(
-    to bottom,
-    #293e55 15%,
-    rgb(20, 20, 48) 75%
-  );
+  background-image: linear-gradient(to bottom, #293e55 15%, #0b1b2e 55%);
   background-size: 100%;
 }
 

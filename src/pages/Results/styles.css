@@ -12,6 +12,8 @@
 }
 
 .results__header-container {
+  max-width: 990px;
+  margin: auto;
   padding-top: 16px;
   display: flex;
   justify-content: space-between;

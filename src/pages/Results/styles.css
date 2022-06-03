@@ -44,11 +44,35 @@
 
 .results__title {
   width: 100%;
-  max-width: 500px;
+  max-width: 470px;
   margin: auto;
   font-size: 30px;
   font-weight: 600;
   text-align: left;
+}
+
+@media (min-width: 450px) {
+  .results__title {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 470px) {
+  .results__title {
+    font-size: 34px;
+  }
+}
+
+@media (min-width: 500px) {
+  .results__title {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 520px) {
+  .results__title {
+    font-size: 38px;
+  }
 }
 
 .results__content {
@@ -64,6 +88,12 @@
   max-width: 500px;
   padding: 16px 16px 16px 16px;
   margin: auto;
+}
+
+@media (min-width: 500px) {
+  .results__result-resume-container {
+    margin-top: 32px;
+  }
 }
 
 .results__result-resume-text {
